@@ -15,6 +15,8 @@ import App from './App.vue'
 import TopHeader from './components/TopHeader/TopHeader'
 import Banner from './components/Banner/Banner'
 import TopNav from './components/TopNav/TopNav'
+import TopNavLeft from './components/TopNavLeft/TopNavLeft'
+import TopNavRight from './components/TopNavRight/TopNavRight'
 import Aside from './components/Aside/Aside'
 Vue.config.productionTip = false
 
@@ -22,6 +24,8 @@ Vue.config.productionTip = false
 Vue.component('TopHeader',TopHeader)
 Vue.component('Banner',Banner)
 Vue.component('TopNav',TopNav)
+Vue.component('TopNavLeft',TopNavLeft)
+Vue.component('TopNavRight',TopNavRight)
 Vue.component('Aside',Aside)
 
 new Vue({

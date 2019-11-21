@@ -3,16 +3,13 @@
     <TopHeader>
     </TopHeader>
 
-    <div>
+    <div class="container-all">
       <TopNav>
       </TopNav>
-        <Aside class="aside">
-        </Aside>
-
+      <Banner class="banner">
+      </Banner>
     </div>
 
-    <Banner class="banner">
-    </Banner>
 
     <Footer>
     </Footer>
@@ -27,9 +24,15 @@ export default {
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-.banner
-  position absolute
-  top 274px
-  left 0
+.container-all
+  width 100%
+  position relative
+  .banner
+    position absolute
+    top 40px
+    left 0
+    z-index -1
+    // top 274px
+    // left 0
 
 </style>
