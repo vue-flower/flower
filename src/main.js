@@ -13,7 +13,7 @@ import App from './App.vue'
 // Vue.use(Pagination);
 
 import TopHeader from './components/TopHeader/TopHeader'
-import Banner from './components/banner/Banner.vue'
+import Banner from './components/Banner/Banner'
 import TopNav from './components/TopNav/TopNav'
 import Aside from './components/Aside/Aside'
 Vue.config.productionTip = false

@@ -104,7 +104,7 @@ import 'swiper/css/swiper.css'
 import ListItem from '../../components/list-item/ListItem'
 import ClassifyItem from '../../components/classify-item/ClassifyItem'
 import classifysData from './datas/classify'
-import Banner from '../../components/banner/Banner'
+import Banner from '../../components/Banner/Banner'
   export default {
     data(){
       return {
