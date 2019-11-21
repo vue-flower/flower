@@ -25,6 +25,14 @@ export default {};
     /*justify-content space-between*/
     .nav-bar
       display flex
-  
-
+      .left
+        &::after
+          content ''
+          display block
+          clear both
+          width 1000%
+          position absolute
+          top 40px
+          left 0
+          border-bottom  3px solid #ff6a00
 </style>
