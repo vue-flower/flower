@@ -1,15 +1,36 @@
 <template>
-  <div>
-    homey页面
+  <div class="home">
+    <TopHeader>
+    </TopHeader>
+
+    <div>
+      <TopNav>
+      </TopNav>
+        <Aside class="aside">
+        </Aside>
+
+    </div>
+
+    <Banner class="banner">
+    </Banner>
+
+    <Footer>
+    </Footer>
   </div>
-</template>
+</template> 
 
-<script type="text/ecmascript-6">
-  export default {
-  }
+<script>
+
+export default {
+
+};
 </script>
-
-<style scoped>
-
+  
+<style lang="stylus" rel="stylesheet/stylus" scoped>
+.banner
+  position absolute
+  top 274px
+  left 0
+  z-index -1
 
 </style>
