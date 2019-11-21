@@ -22,6 +22,6 @@ export default [
   },
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/yongshenghua'
   }
 ]
