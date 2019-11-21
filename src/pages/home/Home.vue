@@ -1,179 +1,231 @@
 <template>
-  <Layout class="home">
-    <Header>
-      <div class="activity">
-        <img src="https://img02.hua.com/pc/images/pc_newuser_order_100.png" />
-      </div>
+  <div class="home">
+    <TopHeader>
 
-      <div class="top-banner">
-        <nav class="top-nav">
-          <ul class="top-nav-left">
-            <li class="">
-              <a href="">
-                <span>收藏鲜花网(hua.com)</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>关注微信</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>花礼网app</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="top-nav-right">
-            <li>
-              <a href="">
-                <span>您好,请登录</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>注册</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>订单查询</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>我的花礼</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>客户服务</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>购物车</span>
-              </a>
-            </li>
-            <li>
-              <span>中国鲜花礼品网:中国鲜花网领先品牌</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- 顶部导航 end -->
+    </TopHeader>
+    <TopNav>
+      
+    </TopNav>
+    <Banner>
 
-      <!-- 头部 start -->
-      <div class="header">
-        <div class="logo">
-          <h1>
-            <img src="../../image/静态图片/home/ia_200000105.png" alt="" />
-          </h1>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="商品关键字" />
-          <button>搜索</button>
-        </div>
-        <div class="service">
-          <div>
-            <span>400-889-8188</span>
+    </Banner>
+
+    <div class="midlle">
+
+      <div class="container">
+        <div class="container-cate">
+          <aside class="aside">
+          <div class="categorys">
+            
+            <div class="cate-dropdown">
+              <h4><a href="">鲜花用途</a></h4>
+              <ul class="aside-nav">
+                <li><a href="">爱情鲜花</a></li>
+                <li><a href="">生日鲜花</a></li>
+                <li><a href="">友情鲜花</a></li>
+                <li><a href="">问候长辈</a></li>
+                <li><a href="">探病慰问</a></li>
+                <li><a href="">道歉鲜花</a></li>
+                <li><a href="">祝贺鲜花</a></li>
+                <li><a href="">婚庆鲜花</a></li>
+                <li><a href="">商务鲜花</a></li>
+              </ul>
+
+              <h4><a href="">鲜花花材</a></h4>
+              <ul>
+                <li><a href="">玫瑰</a></li>
+                <li><a href="">康乃馨</a></li>
+                <li><a href="">百合</a></li>
+                <li><a href="">向日葵</a></li>
+                <li><a href="">扶郎</a></li>
+                <li><a href="">郁金香</a></li>
+                <li><a href="">马蹄莲</a></li>
+              </ul>
+
+              <div class="cate-cake">
+                <a href="">
+                  永生花
+                </a>
+                <div class="right-menu" style="display : none">
+                  <h5>永生花类别</h5>
+                  <div class="link-img">
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>经典花盒</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>巨型玫瑰</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>薰衣草</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>永生瓶花</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>特色永生花</span>
+                    </a>
+                  </div>
+                </div>
+                <ul class="cate-list">
+                  <li>
+                    <a href="">永生瓶花</a>
+                  </li>
+                  <li>
+                    <a href="">经典花盒</a>
+                  </li>
+                  <li>
+                    <a href="">特色永生花</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cate-cake">
+                <a href="">蛋糕</a>
+                <div class="right-menu" style="display : none">
+                  <h5>永生花类别</h5>
+                  <div class="link-img">
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>经典花盒</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>巨型玫瑰</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>薰衣草</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>永生瓶花</span>
+                    </a>
+                    <a href="../../image/静态图片/永生花/ia_600000005.jpg">
+                      <span>特色永生花</span>
+                    </a>
+                  </div>
+                </div>
+                <ul class="cate-list">
+                  <li>
+                    <a href="">元祖</a>
+                  </li>
+                  <li>
+                    <a href="">幸福西饼</a>
+                  </li>
+                  <li>
+                    <a href="">21cake</a>
+                  </li> 
+                  <li>
+                    <a href="">诺心蛋糕</a>
+                  </li> <li>
+                    <a href="">窝夫小子</a>
+                  </li> <li>
+                    <a href="">BONCAKE</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cate-cake">
+                <div class="gifts-toys-plants">
+                  <a href="">礼品</a>
+                  <span>/</span>
+                  <a href="">公仔</a>
+                  <span>/</span>
+                  <a href="">绿植</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <span>在线客服</span>
-          </div>
-        </div>
-      </div>
-      <!-- 头部 end -->
-    </Header>
-    <Layout>
-      <Sider hide-trigger> 
-        <div class="cate">
+        </aside>
+
 
         </div>
-      </Sider>
-      <Content>Content</Content>
-    </Layout>
+      </div>
+    </div>
     <Footer>Footer</Footer>
-  </Layout>
+  </div>
 </template> 
+
 <script>
-export default {};
+
+export default {
+
+};
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-.home {
-  .top-banner {
-    width: 100%;
-    // height 116px
-    background: #f2f2f2;
+.home 
+  width: 100%;
+  .container 
+    position absolute
 
-    .top-nav {
-      height: 35px;
-      width: 1200px;
-      margin: 0 auto;
-      line-height: 35px;
-      font-size: 12px;
-      display: flex;
-      justify-content: space-between;
+    width 100%
+    // background yellow
+    .container-cate
+      width 1200px
+      height 440px
+      display flex
+      justify-content space-between
+      margin 0 auto
+      // background: pink
+      .aside
+        width 100%
+        height 100%
+        .categorys 
+          width 100%
+          height 100%
+          .categorys-title 
+            width 200px
+            height 40px
+            // text-align center
+            padding 0 15px
+            line-height 40px
+            font-size 15px
+            background #ff6a00
+            color #fff
+            h3
+              font-weight bold
 
-      .top-nav-left {
-        width: 348px;
-        display: flex;
-        justify-content: space-between;
-        // background-color red
-      }
+          .cate-dropdown
+            width 200px
+            padding 15px
 
-      .top-nav-right {
-        width: 632px;
-        display: flex;
-        justify-content: space-between;
-        // background-color yellow
-      }
-    }
-  }
+            h4 
+              font-size 14px
+              a
+                font-weight bold
+                color #ff6a00
+            ul 
+              font-size 12px
+              a
+                font-size 12px
+                color #707070
 
-  .header {
-    height: 120px;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+              &::after 
+                content ''
+                display block
+                border 0.5px solid #f2f2f2
 
-    // background-color pink
-    .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+              li 
+                display inline-block
+                line-height 22px
+                margin-right 10px
 
-    .search {
-      height: 34px;
+            .cate-cake
+              a
+                font-size 14px
+                font-weight bold
+                color #ff6a00
+              .right-menu
+                display none
 
-      input {
-        width: 238px;
-        height: 32px;
-        // box-sizing border-box
-        border: 1px solid #f56000;
-      }
+              .cate-list
+                a
+                  color #707070
+                  // color red
+                  font-size 12px
+                
+                .gifts-toys-plants
+                  color #737373
+                  font-size 14px
+                  
+     
 
-      button {
-        width: 82px;
-        height: 34px;
-        background: #f56000;
-        font-size: 16px;
-        color: #fff;
-      }
-    }
+        // .banner    
 
-    .service {
-      width: 252px;
-      display: flex;
-      justify-content: space-between;
-      color: #737373;
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-}
+
 </style>
