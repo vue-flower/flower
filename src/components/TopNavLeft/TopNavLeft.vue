@@ -1,5 +1,5 @@
 <template>
-<div class="top-nav-left"> 
+<div class="top-nav-lefts">
   <h3 class="categorys-title">全部商品导购</h3>
 </div>
 </template>
@@ -11,8 +11,8 @@
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus">
-  .top-nav-left
-    width 200px
+  .top-nav-lefts
+    width 230px
     height 40px
     // text-align center
     padding 0 15px

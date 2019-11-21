@@ -114,6 +114,13 @@
           <a href="">绿植</a>
         </div>
       </div>
+      <div class="cate-cake">
+        <div class="gifts-toys-plants">
+          <a href="">IT数码</a>
+          <span>/</span>
+          <a href="">小家电</a>
+        </div>
+      </div>
     </div>
   </aside>
 </template>
@@ -125,25 +132,31 @@ export default {};
 <style lang="stylus" rel="stylesheet/stylus">
 .aside
   .cate-dropdown
-    width 200px
-    // margin 0 auto
-    padding 15px
+    width 230px
+    height 437x
+    background #fff
+    padding 10px 15px 20px 15px
+    // border-top 4px solid #ff6a00
+    border-bottom 4px solid #ff6a00
 
     h4 
       font-size 14px
       a
         font-weight bold
         color #ff6a00
-    ul 
+    ul
+      width 100%
       font-size 12px
+      padding-bottom 8px
+      border-bottom 1px solid #f2f2f2
       a
         font-size 12px
         color #707070
 
-      &::after 
-        content ''
-        display block
-        border 0.5px solid #f2f2f2
+      /*&::after */
+      /*  content ''*/
+      /*  display block*/
+      /*  border 0.5px solid #f2f2f2*/
 
       li 
         display inline-block
@@ -164,7 +177,10 @@ export default {};
           // color red
           font-size 12px
         
-        .gifts-toys-plants
-          color #737373
-          font-size 14px
+      .gifts-toys-plants
+        height 32px
+        line-height 32px
+        color #737373
+        font-size 14px
+        border-bottom 1px solid #f2f2f2
 </style>

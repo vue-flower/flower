@@ -1,14 +1,17 @@
 <template>
-  
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="(el, index) in arrItem" :key="index">
-          <img class="img" :src="el.imgUrl" />
-        </div>
+  <div>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(el, index) in arrItem" :key="index">
+                  <img class="img" :src="el.imgUrl" />
+              </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
       </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
-    </div>
+  </div>
+
+
   
 </template>
   
@@ -50,4 +53,16 @@ export default {
 };
 </script>
   
-<style lang="stylus" rel="stylesheet/stylus"></style>
+<style lang="stylus" rel="stylesheet/stylus">
+    .banner
+        width 100%
+        height 400px
+        // overflow hidden
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    .img
+                        width 100%
+                        height 400px
+
+</style>

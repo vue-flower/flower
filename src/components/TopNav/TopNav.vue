@@ -1,10 +1,13 @@
 <template>
-  <div class="nav">
-    <div class="left">
-      <TopNavLeft></TopNavLeft>
+  <div class="top-navs">
+    <div class="nav">
+      <div class="nav-bar">
+        <TopNavLeft class="left"></TopNavLeft>
+        <TopNavRight class="right"></TopNavRight>
+
+      </div>
       <Aside></Aside>
     </div>
-    <TopNavRight class="right"></TopNavRight>
   </div>
 </template>
   
@@ -13,11 +16,15 @@ export default {};
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus">
-.nav
-  width 1200px
-  margin 0 auto
-  display flex
-  justify-content space-between
+.top-navs
+  width 100%
+  .nav
+    width 1200px
+    margin 0 auto
+    /*display flex*/
+    /*justify-content space-between*/
+    .nav-bar
+      display flex
   
 
 </style>
