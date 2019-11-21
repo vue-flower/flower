@@ -20,12 +20,12 @@ export default {
     return {
       arrItem:[
 					{
-							name:'swiperSlide5',
-							imgUrl:'https://img02.hua.com/zhuanti/thanksday/2019/pc_thanks_banner.png'
-					},
-					{
 							name:'swiperSlide1',
 							imgUrl:'https://img02.hua.com/zhuanti/birthday/20181025/pc_banner.png'
+					},
+					{
+							name:'swiperSlide5',
+							imgUrl:'https://img02.hua.com/zhuanti/thanksday/2019/pc_thanks_banner.png'
 					},
 					{
 							name:'swiperSlide51',
@@ -53,4 +53,12 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
 .banner
 	width 100%
+	height 400px
+	// overflow hidden
+	.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				.img 
+					width 100%
+					height 400px
 </style>

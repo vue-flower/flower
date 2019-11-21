@@ -3,16 +3,14 @@
     <TopHeader>
     </TopHeader>
 
-    <div>
-      <TopNav>
+    <div class="contents">
+      <TopNav class="nav-list">
       </TopNav>
-        <Aside class="aside">
-        </Aside>
-
+      <Aside class="aside">
+      </Aside>
     </div>
-
-    <Banner class="banner">
-    </Banner>
+      <Banner class="banner">
+      </Banner>
 
     <Footer>
     </Footer>
@@ -27,9 +25,21 @@ export default {
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-.banner
-  position absolute
-  top 274px
-  left 0
+  
+  .contents
+    background #000
+    width 1200px
+    margin 0 auto
+    background #fff
+    position relative
+    .aside
+      width 230px 
+      position relative
+      z-index 11
+  .banner
+    height 440px
+    position absolute
+    top 284px
+    left 0
 
 </style>
