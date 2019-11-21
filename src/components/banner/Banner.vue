@@ -53,5 +53,4 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
 .banner
 	width 100%
-	overflow hidden
 </style>
