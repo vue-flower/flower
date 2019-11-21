@@ -3,6 +3,9 @@ const Flower = () => import('../pages/flower/Flower')
 const YongShengHua = () => import('../pages/yongshenghua/YongShengHua')
 const Product = () => import('../pages/product/Product')
 
+const ShowCart = () => import('../pages/showcart/Showcart')
+
+
 export default [
   {
     path:'/home',
@@ -20,8 +23,15 @@ export default [
     path:'/product',
     component: Product
   },
+
+  {
+    path:'/Shopping/ShowCart',
+    component: ShowCart
+  },
   {
     path: '/',
     redirect: '/yongshenghua'
   }
+
+  
 ]

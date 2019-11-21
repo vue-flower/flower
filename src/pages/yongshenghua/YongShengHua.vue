@@ -77,18 +77,41 @@
     <div class="filter">
       <div class="filter-top">
         <ul>
-          <li class="allred"><a class="allred href="">综合</a> </li>
+          <li class="allred"><a class="allred" href="" >综合</a> </li>
            
           <li class=""> <a href="">销量</a></li>
           <li class=""><a href="">价格</a></li>
           <li class=""> <a href="">最新</a></li>
-        
+
+      
         </ul>
       
 
       </div>
 
       <div class="filter-fotter">
+        <ul class="filter-fotter-sort" >
+          <li class="allred"><a class="first" href="" >综合</a> </li>
+           
+          <li class=""> <a class="quanbu" href="">分类:</a></li>
+          <li class=""><a href="">全部</a></li>
+          <li class=""> <a href="">经典花盒</a></li>
+          <li class=""> <a href="">巨型玫瑰</a></li>
+          <li class=""> <a href="">永生瓶花</a></li>
+          <li class=""> <a href="">特色永生花</a></li>
+        </ul>
+
+        <ul class="filter-fotter-people">
+          <li class="allred"><a class="first" href="" >综合</a> </li>
+           
+          <li class=""> <a href="">人群:</a></li>
+          <li class=""><a href="">送恋人爱人</a></li>
+          <li class=""> <a href="">送父母长辈</a></li>
+          <li class=""> <a href="">送朋友同事</a></li>
+         
+        </ul>
+
+
         
 
        
@@ -98,6 +121,68 @@
 
       
 
+    </div>
+
+    <!-- 鲜花商品 -->
+    <div class="flowersGoods">
+      <ul>
+        <li>
+          <a href="##">
+            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <h4>22222</h4>
+            <h6>ffff333</h6>
+            <h5>66633</h5>
+            <h5>111133333333</h5>
+          </a>
+        </li>
+         <li>
+          <a href="##">
+            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <h4>22222</h4>
+            <h6>ffff333</h6>
+            <h5>66633</h5>
+            <h5>111133333333</h5>
+          </a>
+        </li>
+         <li>
+          <a href="##">
+            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <h4>22222</h4>
+            <h6>ffff333</h6>
+            <h5>66633</h5>
+            <h5>111133333333</h5>
+          </a>
+        </li>
+         <li>
+          <a href="##">
+            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <h4>22222</h4>
+            <h6>ffff333</h6>
+            <h5>66633</h5>
+            <h5>111133333333</h5>
+          </a>
+        </li>
+         <li>
+          <a href="##">
+            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <h4>22222</h4>
+            <h6>ffff333</h6>
+            <h5>66633</h5>
+            <h5>111133333333</h5>
+          </a>
+        </li>
+         <li>
+          <a href="##">
+            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <h4>22222</h4>
+            <h6>ffff333</h6>
+            <h5>66633</h5>
+            <h5>111133333333</h5>
+          </a>
+        </li>
+
+
+      </ul>
     </div>
     
 
@@ -112,10 +197,12 @@
 <script type="text/ecmascript-6">
 
   export default {
+    
+    
   }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus" scoped>
+<style lang="stylus" rel="stylesheet/stylus" >
   .header
     display flex
     width 100%
@@ -212,7 +299,7 @@
       margin 0 auto 
   .filter
     width 1200px
-    height 43px
+    // height 400px
     border-bottom 1px solid black
     margin 0 auto
     .filter-top
@@ -230,11 +317,107 @@
             height 43px
             line-height 43px
           .allred
+            margin-left 20px
             color red
     .filter-fotter
       width 1200px
       height 200px
-      background red
+   
+      .filter-fotter-sort
+        margin-top 20px
+        width 1200px
+        height 69px
+        display flex
+        background #f5f5f5 
+        li
+          margin-right 30px
+          height 69px
+          line-height 69px
+          a
+            color black
+            font-size 15px
+
+          .quanbu
+            color red
+
+      .filter-fotter-people
+        margin-top 2px
+        width 1200px
+        height 69px
+        display flex
+        background #f5f5f5 
+        li
+          margin-right 30px
+          height 69px
+          line-height 69px
+          .first
+            margin-left 20px
+          a
+            color black
+            font-size 15px
+      .filter-fotter-sort
+        margin-top 20px
+        margin-top 2px
+        width 1200px
+        height 69px
+        display flex
+        background #f5f5f5 
+        li
+          margin-right 30px
+          height 69px
+          line-height 69px
+          .first
+            margin-left 20px
+          a
+            color black
+            font-size 15px
+
+  .flowersGoods
+    width 1200px
+    margin 0 auto
+    ul
+      display flex
+      flex-wrap: wrap
+
+      li
+        width 285px
+        height 400px
+        margin-left 15px
+        a
+          display block
+          width 300px
+          height 300px
+          img
+            width 285px
+            height 285px
+          h4
+            font-size 15px
+            text-align center
+           
+            font-weight bold
+            margin-top 5px
+          h6
+            margin-top 5px
+            font-size 15px
+           
+            text-align center
+          h5
+            margin-top 5px
+            font-size 15px
+           
+            text-align center
+
+          
+
+      
+      
+
+          
+
+
+
+
+
 
 
 
