@@ -1,5 +1,5 @@
 <template>
-  
+  <div class="banner"> 
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(el, index) in arrItem" :key="index">
@@ -9,7 +9,7 @@
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
     </div>
-  
+	</div>
 </template>
   
 <script type="text/ecmascript-6">
@@ -50,4 +50,8 @@ export default {
 };
 </script>
   
-<style lang="stylus" rel="stylesheet/stylus"></style>
+<style lang="stylus" rel="stylesheet/stylus">
+.banner
+	width 100%
+	overflow hidden
+</style>
