@@ -1,14 +1,14 @@
 <template>
   <div>
-      <div class="swiper-container">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide" v-for="(el, index) in arrItem" :key="index">
-                  <img class="img" :src="el.imgUrl" />
-              </div>
-          </div>
-          <!-- 如果需要分页器 -->
-          <div class="swiper-pagination"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="(el, index) in arrItem" :key="index">
+            <img class="img" :src="el.imgUrl" />
+        </div>
       </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 
 
