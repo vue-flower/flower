@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="wrap">
-      <a href=""><img class="flower-img" src="../../image/flower/ia_800000025.jpg" alt=""></a>
-      <span class="price">￥145</span>
+      <a href=""><img class="flower-img" :src="`http://img01.hua.com/uploadpic/newpic/${flower.ItemCode}.jpg_220x240.jpg`" alt=""></a>
+      <span class="price">￥{{flower.Price}}</span>
       <a href="" class="detail">
-        <p class="des">描述</p>
-        <p class="keys">关键字</p>
+        <p class="des">{{flower.Instro}}</p>
+        <p class="keys">{{flower.Cpmc}}</p>
       </a>
       <div class="btns">
         <button class="star">收藏</button>
@@ -17,6 +17,12 @@
 
 <script type="text/ecmascript-6">
   export default {
+    props:{
+      flower:{
+        type: Object,
+        required: true
+      }
+    }
   }
 </script>
 
@@ -41,12 +47,21 @@
         .des
           margin-top 10px
           font-size 12px
+          width 100%
+          white-space nowrap
+          text-overflow ellipsis
+          overflow hidden
         .keys
           font-size 12px
           margin-bottom 10px
           color #ff6a00
+          width 100%
+          white-space nowrap
+          text-overflow ellipsis
+          overflow hidden
       .btns
         width 100%
+        margin-bottom 0
         .star,.car
           width 50%
           height 26px

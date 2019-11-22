@@ -4,13 +4,13 @@ import router from '../src/router'
 import App from './App.vue'
 // import ViewUI from 'view-design';
 // import 'view-design/dist/styles/iview.css';
-// import ElementUI from 'element-ui';
-// import { Button, Select,Pagination } from 'element-ui';
+import ElementUI from 'element-ui';
+import { Button, Select,Pagination,Loading  } from 'element-ui';
 // Vue.config.productionTip = false
 // Vue.use(ElementUI);
-// Vue.use(Button)
-// Vue.use(Select)
-// Vue.use(Pagination);
+
+
+import store from './store'
 
 import TopHeader from './components/TopHeader/TopHeader'
 import Banner from './components/Banner/Banner'
@@ -37,10 +37,16 @@ Vue.component('Ad',Ad)
 Vue.component('TimeLimit',TimeLimit)
 Vue.component('Floor',Floor)
 
+Vue.use(Button)
+Vue.use(Select)
+Vue.use(Pagination);
+Vue.use(Loading.directive);
+
 new Vue({
   components:{
     App
   },
   template: '<App />',
-  router //注册路由
+  router, //注册路由
+  store
 }).$mount('#app')

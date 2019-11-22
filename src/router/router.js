@@ -2,7 +2,8 @@ const Home = () => import('../pages/home/Home')
 const Flower = () => import('../pages/flower/Flower')
 const YongShengHua = () => import('../pages/yongshenghua/YongShengHua')
 const Product = () => import('../pages/product/Product')
-const Login = () => import('../pages/login/Login')
+const Cake = () => import('../pages/cakes/Cake')
+
 
 export default [
   {
@@ -24,6 +25,10 @@ export default [
   {
     path:'/login',
     component: Login
+  },
+  {
+    path:'/cake',
+    component: Cake
   },
   {
     path: '/',
