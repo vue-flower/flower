@@ -9,7 +9,7 @@
         更多爱情鲜花 >>
         </a></div>
     </div>
-      <div class="floor-wrap">
+      <div class="floor-wrap" >
         <div class="conten-left">
           <div class="container">
             <a href="">
@@ -27,114 +27,10 @@
         </div>
         <div class="content-right">
           <ul>
-            <FloorList v-for="(item, index) in chunkFloorList[0]" :key="index" :floor="item">
+            <FloorList v-for="(item, index) in todo" :key="index" :floor="item" >
 
             </FloorList>
-            <!-- <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li> -->
+
           </ul>
         </div>
       </div>
@@ -146,24 +42,31 @@
 import FloorList from './FloorList'
 import { mapGetters,mapState } from 'vuex'
 export default {
+  props:{
+    todo:{
+      type:Array
+    }
+  },
   data() {
     return {
-      // chunkFlowerList:[]
+      i:0
+
     }
   },
   components:{
     FloorList  
   },
   computed: {
-    ...mapGetters(['chunkFloorList']
-      )
+    // ...mapGetters(['chunkFloorList']
+    //   )
     // ...mapState({
     //   floorList : state => state.floor.floorList
     // })
   },
   mounted(){
-    this.$store.dispatch('getFloor')
-    console.log(this.$store.getters.chunkFloorList)
+    // this.$store.dispatch('getFloor')
+    console.log(this.todo)
+    // console.log(this.$store.getters.chunkFloorList)
   }
 //   methods: {
     

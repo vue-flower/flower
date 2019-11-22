@@ -15,9 +15,14 @@
     <TimeLimit></TimeLimit>
     <div class="white-30"></div>
 
-    <floor></floor>
+
+        <floor v-for="(todo, index) in todos" :key="index" :todo="todo"></floor>
+        <div class="white-50"></div>
+   
+          <!-- <floor></floor> -->
+    <!-- <floor></floor>
     <div class="white-50"></div>
-    <floor></floor>
+    <floor ></floor>
     <div class="white-50"></div>
     
     <floor></floor>
@@ -26,7 +31,7 @@
     <floor></floor>
     <div class="white-50"></div>
 
-    <floor></floor>
+    <floor></floor> -->
 
     <Footer>
     </Footer>
@@ -34,8 +39,32 @@
 </template> 
 
 <script>
-
+import {mapGetters} from 'vuex'
 export default {
+  data(){
+    return {
+      todos:[]
+    }
+  },
+  computed: {
+    ...mapGetters(['chunkFloorList'])
+  },
+  mounted() {
+    this.$store.dispatch('getFloor')
+    this.$nextTick(()=>{
+      console.log(this.$store.getters.chunkFloorList)
+    })
+    console.log(this.todos)
+
+  },
+  watch: {
+    chunkFloorList(){
+      this.$nextTick(()=>{
+        console.log(this.chunkFloorList)
+        this.todos = this.chunkFloorList
+      })
+    }
+  },
 
 };
 </script>
