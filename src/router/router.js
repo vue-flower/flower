@@ -3,6 +3,8 @@ const Flower = () => import('../pages/flower/Flower')
 const YongShengHua = () => import('../pages/yongshenghua/YongShengHua')
 const Product = () => import('../pages/product/Product')
 const Cake = () => import('../pages/cakes/Cake')
+const Login = () => import('../pages/login/Login')
+
 
 
 export default [
