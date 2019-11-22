@@ -30,7 +30,7 @@ export default [
   },
   {
     path: '/',
-    redirect: '/yongshenghua'
+    redirect: '/Shopping/ShowCart'
   }
 
   
