@@ -70,7 +70,7 @@
 
     <!-- 大图片 -->
     <div class="big-photo">
-      <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+      <img src="../../image/静态图片/永生花/ysh-top-banner.jpg" alt="">
     </div>
 
     <!-- 过滤 -->
@@ -89,20 +89,22 @@
 
       </div>
 
+      <div class="link"></div>
+
       <div class="filter-fotter">
         <ul class="filter-fotter-sort" >
-          <li class="allred"><a class="first" href="" >综合</a> </li>
+          <!-- <li class="allred"><a class="first" href="" >综合</a> </li> -->
            
           <li class=""> <a class="quanbu" href="">分类:</a></li>
           <li class=""><a href="">全部</a></li>
-          <li class=""> <a href="">经典花盒</a></li>
-          <li class=""> <a href="">巨型玫瑰</a></li>
-          <li class=""> <a href="">永生瓶花</a></li>
-          <li class=""> <a href="">特色永生花</a></li>
+          <li class="active"> <a href="">经典花盒</a></li>
+          <li class="active"> <a href="">巨型玫瑰</a></li>
+          <li class="active"> <a href="">永生瓶花</a></li>
+          <li class="active"> <a href="">特色永生花</a></li>
         </ul>
 
         <ul class="filter-fotter-people">
-          <li class="allred"><a class="first" href="" >综合</a> </li>
+          <!-- <li class="allred"><a class="first" href="" >综合</a> </li> -->
            
           <li class=""> <a href="">人群:</a></li>
           <li class=""><a href="">送恋人爱人</a></li>
@@ -129,57 +131,63 @@
         <li>
           <a href="##">
             <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>22222</h4>
-            <h6>ffff333</h6>
-            <h5>66633</h5>
-            <h5>111133333333</h5>
+            <h4>创意永生花台灯,可调亮度</h4>
+            <h6>永生花我如此爱你</h6>
+            <h5>永生花台灯</h5>
+            <h5>$398</h5>
           </a>
         </li>
-         <li>
+
+        <li>
           <a href="##">
             <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>22222</h4>
-            <h6>ffff333</h6>
-            <h5>66633</h5>
-            <h5>111133333333</h5>
+            <h4>创意永生花台灯,可调亮度</h4>
+            <h6>永生花我如此爱你</h6>
+            <h5>永生花台灯</h5>
+            <h5>$398</h5>
           </a>
         </li>
-         <li>
+
+        <li>
           <a href="##">
             <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>22222</h4>
-            <h6>ffff333</h6>
-            <h5>66633</h5>
-            <h5>111133333333</h5>
+            <h4>创意永生花台灯,可调亮度</h4>
+            <h6>永生花我如此爱你</h6>
+            <h5>永生花台灯</h5>
+            <h5>$398</h5>
           </a>
         </li>
-         <li>
+
+        <li>
           <a href="##">
             <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>22222</h4>
-            <h6>ffff333</h6>
-            <h5>66633</h5>
-            <h5>111133333333</h5>
+            <h4>创意永生花台灯,可调亮度</h4>
+            <h6>永生花我如此爱你</h6>
+            <h5>永生花台灯</h5>
+            <h5>$398</h5>
           </a>
         </li>
-         <li>
+
+        <li>
           <a href="##">
             <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>22222</h4>
-            <h6>ffff333</h6>
-            <h5>66633</h5>
-            <h5>111133333333</h5>
+            <h4>创意永生花台灯,可调亮度</h4>
+            <h6>永生花我如此爱你</h6>
+            <h5>永生花台灯</h5>
+            <h5>$398</h5>
           </a>
         </li>
-         <li>
+
+        <li>
           <a href="##">
             <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>22222</h4>
-            <h6>ffff333</h6>
-            <h5>66633</h5>
-            <h5>111133333333</h5>
+            <h4>创意永生花台灯,可调亮度</h4>
+            <h6>永生花我如此爱你</h6>
+            <h5>永生花台灯</h5>
+            <h5>$398</h5>
           </a>
         </li>
+        
 
 
       </ul>
@@ -292,6 +300,7 @@
       margin 0 auto
   
   .big-photo
+    margin-top 10px
     img
       width 1200px
       height 132px
@@ -300,7 +309,7 @@
   .filter
     width 1200px
     // height 400px
-    border-bottom 1px solid black
+    // border-bottom 1px solid black
     margin 0 auto
     .filter-top
       height 44px
@@ -319,6 +328,12 @@
           .allred
             margin-left 20px
             color red
+    .link
+      width 1200px
+      height 1px
+      background black
+      margin-bottom 5px 
+
     .filter-fotter
       width 1200px
       height 200px
@@ -333,6 +348,7 @@
           margin-right 30px
           height 69px
           line-height 69px
+          margin-left 20px
           a
             color black
             font-size 15px
@@ -347,9 +363,10 @@
         display flex
         background #f5f5f5 
         li
-          margin-right 30px
           height 69px
           line-height 69px
+          margin:0px 30px 0px 20px
+
           .first
             margin-left 20px
           a
@@ -366,8 +383,13 @@
           margin-right 30px
           height 69px
           line-height 69px
+          margin-left 20px
+        li:hover
+            color red
           .first
             margin-left 20px
+        
+
           a
             color black
             font-size 15px
@@ -391,16 +413,19 @@
             width 285px
             height 285px
           h4
+           
             font-size 15px
             text-align center
            
             font-weight bold
             margin-top 5px
+            color red
           h6
             margin-top 5px
             font-size 15px
            
             text-align center
+            color #233333 
           h5
             margin-top 5px
             font-size 15px
