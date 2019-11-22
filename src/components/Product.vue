@@ -141,7 +141,7 @@
     </header>
 
     <main>
-      <div class="loader">
+      <div id="loader">
         <a href="##" style="font-weight:bold">首页</a>
         <span>></span>
         <a href="##">鲜花</a>
@@ -149,9 +149,15 @@
         <a href="##">一往情深</a>
         <span>></span>
       </div>
-      <div class="content">
+      <div id="content">
         <div class="leftContent">
           <img style="width:510px;height:520px" src="./imgs/huaa.jpg" alt="">
+          <div class="smallImg">
+            <img src="./imgs/smallo.jpg" alt="">
+            <img src="./imgs/smallo.jpg" alt="">
+            <img src="./imgs/smallo.jpg" alt="">
+            <img src="./imgs/smallo.jpg" alt="">
+          </div>
         </div>
         <div class="rightContent">
           <h1 style="font-size:20px;font-weight:bold">一往情深--精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎</h1>
@@ -198,19 +204,352 @@
             </li>
           </ul>
 
-          <div class="price"> 
+          <div class="price">   
             <p>花礼价:
               <span style="color:orange;font-weight:bold">$239</span>
             </p>
           </div>
 
+          <div class="message">
+            <p>促销信息:</p>
+            <img src="./imgs/appzx_01.jpg" alt="">
+            <p>$234</p>
+            <p>去APP购买
+               <i class="iconfont icon-xiangxiajiantou"></i>
+            </p>
+            <p>去微信购买
+               <i class="iconfont icon-xiangxiajiantou"></i>
+            </p>
+          </div>
+
+          <div class="buy">
+            <button style="background:rgba(0,0,0,0.1);border:1px #ff6a00 solid">加入购物车</button>
+            <button style="background:#ff6a00;margin-left:17px">立即购买</button>
+            <button class="collect">
+              <i class="iconfont icon-aixin"></i>
+              收藏</button>
+          </div>
           
 
         </div>
       </div>
     </main>
       
-    
+    <footer>
+      <div class="leftFooter">
+        <div class="details">
+          <p>浏览记录</p>
+          <div class="special">
+            <div class="little">
+              <img src="./imgs/details1.jpg" alt="">
+            </div>
+            <h1>温柔如你—戴安娜粉玫瑰12枝，石竹梅7枝
+                <br/><span style="color:#fe7a24">$239</span>
+            </h1>
+          </div>
+        </div>
+
+        <div class="shops">
+          <p>热销推荐</p>
+          <ul class="shop">
+            <li>
+              <a href="##">
+                <img src="./imgs/details2.jpg" alt="">
+                <h1>
+                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                </h1>
+                <h2 style="color:#fe7a24">$235</h2>
+              </a> 
+              <div class="cut"></div>
+            </li>
+
+            <li>
+              <a href="##">
+                <img src="./imgs/details2.jpg" alt="">
+                <h1>
+                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                </h1>
+                <h2 style="color:#fe7a24">$235</h2>
+              </a> 
+              <div class="cut"></div>
+            </li>
+
+            <li>
+              <a href="##">
+                <img src="./imgs/details2.jpg" alt="">
+                <h1>
+                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                </h1>
+                <h2 style="color:#fe7a24">$235</h2>
+              </a> 
+              <div class="cut"></div>
+            </li>
+
+            <li>
+              <a href="##">
+                <img src="./imgs/details2.jpg" alt="">
+                <h1>
+                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                </h1>
+                <h2 style="color:#fe7a24">$235</h2>
+              </a> 
+              <div class="cut"></div>
+            </li>
+
+            <li>
+              <a href="##">
+                <img src="./imgs/details2.jpg" alt="">
+                <h1>
+                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                </h1>
+                <h2 style="color:#fe7a24">$235</h2>
+              </a> 
+              <div class="cut"></div>
+            </li>
+
+            <li>
+              <a href="##">
+                <img src="./imgs/details2.jpg" alt="">
+                <h1>
+                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                </h1>
+                <h2 style="color:#fe7a24">$235</h2>
+              </a> 
+              
+            </li>
+
+          </ul>
+        </div>
+
+      
+      </div>
+      <div class="rightFooter">
+        <div class="lead">
+          <ul>
+            <li>
+              <a href="##">商品详情</a>
+            </li>
+            <li>
+              <a href="##">用户评价</a>
+            </li>
+            <li>
+              <a href="##">购物保障</a>
+            </li>
+          </ul>
+        </div>
+        <div class="photo">
+          <img src="./imgs/photo1.jpg" alt="">
+          <img src="./imgs/photo2.jpg" alt="">
+          <img src="./imgs/photo3.jpg" alt="">
+          <img src="./imgs/photo4.jpg" alt="">
+          <img src="./imgs/photo5.jpg" alt="">
+        </div>
+
+        <div class="lead" style="margin-top:30px">
+          <ul>
+            <li>
+              <a href="##">商品详情</a>
+            </li>
+            <li>
+              <a href="##">用户评价</a>
+            </li>
+            <li>
+              <a href="##">购物保障</a>
+            </li>
+          </ul>
+        </div>
+        <div class="evaluate">
+          <ul>
+            <li>
+              <div class="user">
+                <img src="./imgs/avatar.jpg" alt="">
+                <p>***********</p>
+              </div>
+            <div class="say">
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <p>第一次购买女优说很漂亮</p>
+            </div>
+            </li>
+            <img class="bought" src="./imgs/pos.jpg" alt="">
+            <div class="pos">
+                <i class="iconfont icon-dingwei"></i>
+                <p>美国加利福尼亚</p>
+                <p style="margin-left:20px">2013-11-22</p>
+            </div>
+            <div class="cut"></div>
+          </ul>
+            
+          <ul>
+            <li>
+              <div class="user">
+                <img src="./imgs/avatar.jpg" alt="">
+                <p>***********</p>
+              </div>
+            <div class="say">
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <p>第一次购买女优说很漂亮</p>
+            </div>
+            </li>
+            <img class="bought" src="./imgs/pos.jpg" alt="">
+            <div class="pos">
+                <i class="iconfont icon-dingwei"></i>
+                <p>美国加利福尼亚</p>
+                <p style="margin-left:20px">2013-11-22</p>
+            </div>
+            <div class="cut"></div>
+          </ul>
+          
+          <ul>
+            <li>
+              <div class="user">
+                <img src="./imgs/avatar.jpg" alt="">
+                <p>***********</p>
+              </div>
+              <div class="say">
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <i class="iconfont icon-xingxing1"></i>
+              <p>第一次购买女优说很漂亮</p>
+              </div>
+            </li>
+            <img class="bought" src="./imgs/pos.jpg" alt="">
+            <div class="pos">
+                <i class="iconfont icon-dingwei"></i>
+                <p>美国加利福尼亚</p>
+                <p style="margin-left:20px">2013-11-22</p>
+            </div>
+            <div class="cut"></div>
+          </ul>
+
+          <div class="btn">
+            <button>本商品评价<span style="color:orange">7732</span>条</button>
+            <button style="margin-left:40px">所有商品评价<span style="color:orange">7732</span>条</button>
+          </div>
+        </div>
+
+        <div class="lead" style="margin-top:30px">
+          <ul>
+            <li>
+              <a href="##">商品详情</a>
+            </li>
+            <li>
+              <a href="##">用户评价</a>
+            </li>
+            <li>
+              <a href="##">购物保障</a>
+            </li>
+          </ul>
+        </div>
+        <div class="protect">
+          <ul class="title">
+            <li>
+              <i class="iconfont icon-damuzhi" ></i>
+              <p style="margin:15px 0 0 10px">销量第一</p>
+            </li>
+            <li>
+              <i class="iconfont icon-damuzhi" ></i>
+              <p style="margin:15px 0 0 10px">销量第一</p>
+            </li>
+            <li>
+              <i class="iconfont icon-damuzhi" ></i>
+              <p style="margin:15px 0 0 10px">销量第一</p>
+            </li>
+            <li>
+              <i class="iconfont icon-damuzhi" ></i>
+              <p style="margin:15px 0 0 10px">销量第一</p>
+            </li>
+            <li>
+              <i class="iconfont icon-damuzhi" ></i>
+              <p style="margin:15px 0 0 10px">销量第一</p>
+            </li>
+            <li>
+              <i class="iconfont icon-damuzhi" ></i>
+              <p style="margin:15px 0 0 10px">销量第一</p>
+            </li>
+          </ul>
+          <img src="./imgs/protect.jpg" alt="">
+        </div>
+        
+
+      </div>
+    </footer>
+
+   
+    <div class="find">
+      <ul class="toFind">
+        <li>
+          <a href="##">首页</a>
+          <p>|</p>
+          <a href="##">关于我们</a>
+          <p>|</p>
+          <a href="##">媒体报道</a>
+          <p>|</p>
+          <a href="##">联系方式</a>
+          <p>|</p>
+          <a href="##">企业团购</a>
+          <p>|</p>
+          <a href="##">花店入驻</a>
+          <p>|</p>
+          <a href="##">友情链接</a>
+          <p>|</p>
+          <a href="##">在线补款</a>
+          <p>|</p>
+          <a href="##">为什么选择中国鲜花礼品网</a>
+        </li>
+      </ul>
+      <div class="imgFind">
+        <ul>
+          <li>
+            <a href="##">
+              <img src="./imgs/m1.png" alt="">
+            </a>
+          </li>
+          <li>
+            <img src="./imgs/m2.png" alt="">
+          </li>
+          <li>
+            <a href="##">
+              <img src="./imgs/m3.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="##">
+              <img src="./imgs/m4.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="toText">
+        <ul class="toTextA">
+          <li>
+            <a href="##">中国花卉协会会员</a>
+            <a href="##">中国电子商务协会会员</a>
+            <p>ICP经营许可证：</p>
+            <a href="##">粤B2-20050744 </a>
+            <p>|</p>
+            <a href="##"> 粤ICP备09171662号</a>
+            <p>粤公网安备44030502000373号</p>
+            <p>Copyright © 2005-2019</p>
+          </li>
+        </ul>
+        <ul class="toTextB">
+          <li>
+            <p>花礼网 （中国鲜花礼品网）</p>
+            <a href="##">www.hua.com</a>
+            <p>深圳市百易信息技术有限公司</p>
+            <p>中国领先鲜花网品牌,专业鲜花速递服务！</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </template>
@@ -227,11 +566,11 @@
   header
     width 100%
     height 230px
-    background #f2f2f2
+    // background #f2f2f2
     #nav
       width 1400px
       height 40px
-      // background pink 
+      background #f2f2f2
       margin 0 auto
       .leftNav
         width 400px
@@ -252,7 +591,7 @@
     #search
       width 100%
       height 140px
-      background pink
+      // background pink
       margin 0 auto 
       position relative
       .im
@@ -265,7 +604,8 @@
         left 45% 
         input   
           width 270px
-          height 40px  
+          height 40px
+          border 1px orange solid  
         button 
           width 80px
           height 42px
@@ -284,17 +624,18 @@
     #guide
       width 100%
       height 50px
-      background yellow  
+      background #fe7a24 
       display flex
       padding 0 300px
+      
       .leftGuide
         width 200px
         height 50px
-        background orange
-        margin-left 80px
+        // background orange
+        // margin-left 0px
         .guideA
-          font-size 19px 
-          margin-left 12px
+          font-size 17px 
+          margin-left 30px
           line-height 50px
           a
             color white
@@ -303,40 +644,48 @@
       .rightGuide
         width 1200px
         height 50px
-        background yellowgreen 
+        // background yellowgreen 
         .guideB
           display flex
           justify-content space-around
           line-height 50px
           padding 0 30px
-          a
-            font-size 20px
-            color white
+          margin-left -40px
+          li
+            a
+              font-size 17px
+              color white
   main 
-    .loader
+    #loader
       width 1200px
       height 20px 
-      background #99FF99
+      //  
       margin 0 auto
       a
         font-size 20px
-    .content
+    #content
       width 1200px
-      height 1000px
+      height 890  px
       display flex
-      background #E8CCFF
+      // background #E8CCFF
       margin 5px auto  0
       border 1px solid #a4cf61
-      
       .leftContent
         width 520px
         height 650px
         margin 33px 0 0 73px
         background 	#FF69B4 
+        .smallImg
+          margin-top 15px
+          display flex
+          justify-content space-evenly
+          img   
+            width 70px
+            height 70px     
       .rightContent
-        width 560px
-        height 1000px
-        background #33FFDD
+        width 520px
+        height 850px
+        // background #33FFDD
         margin 33px 0 0 100px
         .cut
           width 500px
@@ -358,16 +707,188 @@
               margin-bottom 60px
         .price
           margin-top 60px      
+        .message
+          width 560px
+          height 42px
+          background #e5e5e5
+          display flex
+          justify-content space-around
+          margin-top 17px
+        .buy
+          button  
+            width 160px
+            height 50px
+            margin-top 17px
+            font-size 20px
+            color white
+          .collect
+            width 80px
+            height 34px
+            background rgba(0,0,0,0)
+            margin-left 17px
+  footer 
+    width 1200px
+    height 4550px
+    background #99CC66
+    margin 15px auto 0
+    display flex
+    .leftFooter 
+      width 210px
+      height 2000px
+      background #FFFFCC
+      border 1px #e5e5e5 solid
+      .details
+        height 140px
+        border 1px #e5e5e5 solid
+        p
+          width 208px
+          height 35px
+          background #ffe8d9
+          text-align center
+          line-height 35px
+          font-size 16px
+          color #80807d 
+        .special
+          display flex 
+          .little
+            border 1px #e5e5e5 solid
+           
+          h1
+            margin 20px 0 0 10px
+            
+      .shops
+        height 1850px
+        margin-top 15px
+        background #FFCCCC
+        p
+          width 208px
+          height 35px
+          background #ffe8d9
+          text-align center
+          line-height 35px
+          font-size 16px
+          color #80807d 
+        .shop
+          width 210px
+          height 1870px
+          img
+            width 180px
+            height 200px
+            margin 8px 0 0 8px
+          h1
+            margin 10px 0 0 3px
+            font-size 14px
+          h2
+            margin 10px 0 0 3px
+          .cut
+            width 190px
+            height 1px
+            background #e5e5e5
+            margin 25px 0 0 10px
+    .rightFooter 
+      height 4550px
+      width 970px
+      background orange   
+      margin-left 17px
+      .lead
+        ul
+          display flex
+          li
+            width 110px
+            height 40px
+            background red
+            line-height 40px
+            text-align center
+            border 1px #7e8c8d solid 
+      .photo
+        height 3065px
+        background yellow
+        border 1px #7e8c8d solid
+        img
+          margin 10px 0 0 100px
+      .evaluate
+        height 760px
+        width 970px
+        background yellow
+        border 1px #7e8c8d solid
+        ul
+          li
+            margin 20px 0 0 20px
+            display flex
+            .user
+              img
+                border-radius:50%
+                width 32px
+                height 32px
+                margin-left 20px
+            .say
+              margin 10px 0 0 20px
+          .bought
+            width 80px
+            height 80px
+            margin 6px 0 0 130px
+          .pos
+            margin 20px 0 0  130px
+            display flex
+          .cut
+            width 900px
+            height 1px
+            background #7e8c8d
+            margin 30px 0 0 30px
+        .btn
+          margin 25px 0 0  280px
+          button
+            width 160px
+            height 40px
+            background rgba(0,0,0,0)
+      .protect
+        height 530px
+        // background red
+        border 1px #7e8c8d solid
+        .title
+          display flex
+          justify-content space-around 
+          .iconfont
+            color #ff6600
+            font-size 80px
+        img
+          margin 25px 25px 25px 25px  
 
-
-          
+  .find
+    width  1400px
+    height 300px
+    // background red 
+    margin-left 320px
+    .toFind  
+      li
+        display flex
+        justify-content space-around
+        margin-top 70px
         
+    .imgFind
+      margin-top 60px
+      ul
+        display flex
+        justify-content center
+        li
+          margin-left 15px
+    .toText
+      margin-top  40px   
+      .toTextA
+        li
+          display flex
+          justify-content center
+      .toTextB
+        margin-top 10px 
+        li
+          display flex
+          justify-content center 
+
+
+
         
-
-
-
-
-       
+      
+        
 </style>
 
  
