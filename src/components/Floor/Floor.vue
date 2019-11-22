@@ -27,7 +27,10 @@
         </div>
         <div class="content-right">
           <ul>
-            <li>
+            <FloorList v-for="(item, index) in chunkFloorList[0]" :key="index" :floor="item">
+
+            </FloorList>
+            <!-- <li>
               <a href="">
                 <div class="img-box">
                   <img
@@ -131,22 +134,7 @@
                   <p>已售 2539 件</p>
                 </div>
               </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img-box">
-                  <img
-                    src="https://img01.hua.com/uploadpic/newpic/9092112.jpg_220x240.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-area">
-                  <p>爱情 · 99枝玫瑰赠德芙心语巧克力</p>
-                  <h5>¥629</h5>
-                  <p>已售 2539 件</p>
-                </div>
-              </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -155,7 +143,33 @@
 </template>
   
 <script type="text/ecmascript-6">
-export default {};
+import FloorList from './FloorList'
+import { mapGetters,mapState } from 'vuex'
+export default {
+  data() {
+    return {
+      // chunkFlowerList:[]
+    }
+  },
+  components:{
+    FloorList  
+  },
+  computed: {
+    ...mapGetters(['chunkFloorList']
+      )
+    // ...mapState({
+    //   floorList : state => state.floor.floorList
+    // })
+  },
+  mounted(){
+    this.$store.dispatch('getFloor')
+    console.log(this.$store.getters.chunkFloorList)
+  }
+//   methods: {
+    
+//   },
+
+ };
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus">
@@ -204,32 +218,27 @@ export default {};
           a
             color #ffffff
     .content-right
-      ul
-        li
-          width 240px
-          height 334px
-          float left
-          border 1px solid #e5e5e5
-          a
-            color #737373
-            text-align center
-            .img-box
-              // padding 2px
-              margin 15px 9px
-              img 
-                width 220px
-                height 240px
-            .text-area
-              box-sizing border-box
-              padding 0 0 10px 0
-              p 
-                font-size 12px
-              h5
-                font-size 14px
-                font-weight bold
-                color #000
-
-        
-
-
+      li
+        width 240px
+        height 334px
+        float left
+        border 1px solid #e5e5e5
+        a
+          color #737373
+          text-align center
+          .img-box
+            // padding 2px
+            margin 15px 9px
+            img 
+              width 220px
+              height 240px
+          .text-area
+            box-sizing border-box
+            padding 0 0 10px 0
+            p 
+              font-size 12px
+            h5
+              font-size 14px
+              font-weight bold
+              color #000
 </style>

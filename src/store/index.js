@@ -7,13 +7,15 @@ import actions from './actions'
 import getters from './getters'
 
 import flower from './modules/flower'
+import floor from './modules/floor'
 
 Vue.use(Vuex)
 
 
 const store =  new Vuex.Store({
   modules:{
-    flower
+    flower,
+    floor
   },
   state,
   mutations,
