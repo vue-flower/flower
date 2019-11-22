@@ -4,7 +4,9 @@
       <div class="nav-bar">
         <TopNavLeft class="left"></TopNavLeft>
         <TopNavRight class="right"></TopNavRight>
+
       </div>
+      <Aside></Aside>
     </div>
   </div>
 </template>

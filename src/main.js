@@ -17,16 +17,25 @@ import Banner from './components/Banner/Banner'
 import TopNav from './components/TopNav/TopNav'
 import TopNavLeft from './components/TopNavLeft/TopNavLeft'
 import TopNavRight from './components/TopNavRight/TopNavRight'
+import TopNavAside from './components/TopNavAside/TopNavAside'
 import Aside from './components/Aside/Aside'
+import Ad from './components/Ad/Ad'
+import TimeLimit from './components/TimeLimit/TimeLimit.vue'
+import Floor from './components/Floor/Floor'
+
 Vue.config.productionTip = false
 
 //Vue全局注册组件的语法:Vue
 Vue.component('TopHeader',TopHeader)
 Vue.component('Banner',Banner)
 Vue.component('TopNav',TopNav)
+Vue.component('TopNavAside',TopNavAside)
 Vue.component('TopNavLeft',TopNavLeft)
 Vue.component('TopNavRight',TopNavRight)
 Vue.component('Aside',Aside)
+Vue.component('Ad',Ad)
+Vue.component('TimeLimit',TimeLimit)
+Vue.component('Floor',Floor)
 
 new Vue({
   components:{
