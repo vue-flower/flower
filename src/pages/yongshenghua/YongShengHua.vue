@@ -126,25 +126,7 @@
     </div>
 
     <!-- 鲜花商品 -->
-    <div class="flowersGoods">
-      <ul>
-        <li>
-          <a href="##">
-            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
-            <h4>创意永生花台灯,可调亮度</h4>
-            <h6>永生花我如此爱你</h6>
-            <h5>永生花台灯</h5>
-            <h5>$398</h5>
-          </a>
-        </li>
-
-       
-
-      </ul>
-    </div>
-    
-
-
+    <YongshenghuaList/>
 
   </div>
 
@@ -153,14 +135,20 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import json from '../../json/flower.json'
+  import YongshenghuaList from '../../components/YongshenghuaList/YongshenghuaList'
+  // import json from '../../json/flower.json'
+
   export default {
+    components: {
+      YongshenghuaList
+    },
+
+
     computed: {
      
     }
     
-    
-    
+  
   }
 </script>
 
