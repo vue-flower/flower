@@ -60,7 +60,7 @@ export default {
   watch: {
     chunkFloorList(){
       this.$nextTick(()=>{
-        console.log(this.chunkFloorList)
+        // console.log(this.chunkFloorList)
         this.todos = this.chunkFloorList
       })
     }
@@ -70,8 +70,11 @@ export default {
 </script>
   
 <style lang="stylus" rel="stylesheet/stylus" scoped>
+.home
+  width 100%
+  overflow hidden
   .container-all
-    width 100%
+    // width 100%
     position relative
   .banner
     position absolute
@@ -80,10 +83,5 @@ export default {
     z-index -1
     top 280px
     left 0
-  .white-50
-    width 100%
-    height 50px
-  .white-30
-    width 100%
-    height 30px
+
 </style>

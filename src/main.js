@@ -5,7 +5,16 @@ import App from './App.vue'
 // import ViewUI from 'view-design';
 // import 'view-design/dist/styles/iview.css';
 import ElementUI from 'element-ui';
-import { Button, Select,Pagination,Loading  } from 'element-ui';
+import { 
+  Button,
+  Select,
+  Pagination,
+  Loading ,
+  Form,
+  Input,
+  FormItem,
+  Tabs,
+  TabPane,} from 'element-ui';
 // Vue.config.productionTip = false
 // Vue.use(ElementUI);
 
@@ -22,6 +31,7 @@ import Aside from './components/Aside/Aside'
 import Ad from './components/Ad/Ad'
 import TimeLimit from './components/TimeLimit/TimeLimit.vue'
 import Floor from './components/Floor/Floor'
+import LoginItem from './components/Login/LoginItem'
 
 Vue.config.productionTip = false
 
@@ -36,11 +46,17 @@ Vue.component('Aside',Aside)
 Vue.component('Ad',Ad)
 Vue.component('TimeLimit',TimeLimit)
 Vue.component('Floor',Floor)
+Vue.component('LoginItem',LoginItem)
 
 Vue.use(Button)
 Vue.use(Select)
 Vue.use(Pagination);
 Vue.use(Loading.directive);
+Vue.use(Form);
+Vue.use(Input);
+Vue.use(FormItem);
+Vue.use(Tabs);
+Vue.use(TabPane,);
 
 new Vue({
   components:{

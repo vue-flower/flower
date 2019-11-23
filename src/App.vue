@@ -7,6 +7,7 @@
       <router-link to="/product">详情</router-link>
       <router-link to="/login">登陆</router-link>
       <router-link to="/cake">蛋糕</router-link>
+      <router-link to="logins">logins</router-link>
     </div>
 
     <router-view></router-view>
@@ -22,7 +23,7 @@ export default {
 <style lang="stylus" scoped>
   .router
     position fixed
-    top 0
+    bottom 0
     left 0
     font-size 20px
 </style>

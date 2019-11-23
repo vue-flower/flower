@@ -4,6 +4,8 @@ const YongShengHua = () => import('../pages/yongshenghua/YongShengHua')
 const Product = () => import('../pages/product/Product')
 const Cake = () => import('../pages/cakes/Cake')
 const Login = () => import('../pages/login/Login')
+// const LoginItem = () => import('../components/Login/LoginItem.vue')
+
 
 
 
@@ -31,7 +33,7 @@ export default [
   {
     path:'/cake',
     component: Cake
-  },
+  }, 
   {
     path: '/',
     redirect: '/home'
