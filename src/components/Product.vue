@@ -171,7 +171,7 @@
           <p>材 料：高档礼盒装鲜花:19枝红玫瑰，勿忘我0.1扎</p>
           <p>包 装：牛皮纸和深咖啡色条纹纸，银色缎带花结，魔力铁山灰包装盒</p>
           <p>花 语：你的轻柔像阵微风，让我从容不迫，想让你知道，我对你始终一往情深。</p>
-          <p>配 送：限送100多个主要城市的市区及近郊：北京,上海,深圳,广州,成都,武汉,南京,杭州,苏州,天津,西安,长沙,东莞,厦门,佛山,沈阳,合肥,重庆,大连,郑州,青岛,太原,无锡,石家庄,济南,宁波,哈尔滨,乌鲁木齐,贵阳,昆明,福州,长春,南昌,兰州,珠海,南宁,中山,常州,金华,邯郸,泉州,海口,嘉兴,南通,呼和浩特,廊坊,唐山,温州,徐州,绵阳,烟台,襄阳,保定,潍坊,镇江,衡阳,包头,赣州,扬州,清远,荆州,莆田,汉中,洛阳,湛江,九江,鞍山,大庆,秦皇岛,张家口,桂林,吉林,淄博,蚌埠,柳州,遵义,邢台,宜春,漳州,三亚,宜宾,东营,临沂,德州,开封,大同,龙岩,齐齐哈尔,连云港,新乡,黄冈,焦作,十堰,驻马店,信阳,牡丹江,黄石,宝鸡,丹东,阜阳,北海,聊城,锦州,许昌,内江,萍乡,安庆,承德,商丘,盘锦,乐山,沧州,河源,营口,平顶山,临汾,韶关,日照,新余,晋城,松原,淮北,淮南,晋中,潮州,滨州,自贡,六安,株州,濮阳,常熟,晋江,顺德,江阴,吴江,昆山,义乌,惠阳,银川,温江,燕郊,新都,涿州,南沙,宜兴,即墨,海安县,都江堰,增城,仙桃,菏泽</p>
+          <p>配 送：全国各个城市  </p>
           <p>配 送至：请选择
             <i class="iconfont icon-xiangxiajiantou"></i>
           </p>
@@ -213,11 +213,13 @@
           <div class="message">
             <p>促销信息:</p>
             <img src="./imgs/appzx_01.jpg" alt="">
-            <p>$234</p>
-            <p>去APP购买
+            <p style="color:orange;font-size:17px;margin-top:16px">$234</p>
+            <p>
+              <a href="##">去APP购买</a>
                <i class="iconfont icon-xiangxiajiantou"></i>
             </p>
-            <p>去微信购买
+            <p>
+              <a href="##">去微信购买</a>
                <i class="iconfont icon-xiangxiajiantou"></i>
             </p>
           </div>
@@ -225,9 +227,12 @@
           <div class="buy">
             <button style="background:rgba(0,0,0,0.1);border:1px #ff6a00 solid">加入购物车</button>
             <button style="background:#ff6a00;margin-left:17px">立即购买</button>
-            <button class="collect">
-              <i class="iconfont icon-aixin"></i>
-              收藏</button>
+            <div class="collect">
+                <span>
+                  <i class="iconfont icon-aixin">  </i>
+                </span>
+                <a href="##">  收 藏</a>
+            </div>
           </div>
           
 
@@ -329,8 +334,8 @@
             <li>
               <a href="##">商品详情</a>
             </li>
-            <li>
-              <a href="##">用户评价</a>
+            <li style="width:130px;height:40px">
+              <a href="##">用户评价(<b style="color:orange">0000</b>)</a>
             </li>
             <li>
               <a href="##">购物保障</a>
@@ -350,8 +355,8 @@
             <li>
               <a href="##">商品详情</a>
             </li>
-            <li>
-              <a href="##">用户评价</a>
+            <li style="width:130px;height:40px">
+              <a href="##">用户评价(<b style="color:orange">0000</b>)</a>
             </li>
             <li>
               <a href="##">购物保障</a>
@@ -439,8 +444,8 @@
             <li>
               <a href="##">商品详情</a>
             </li>
-            <li>
-              <a href="##">用户评价</a>
+            <li style="width:130px;height:40px">
+              <a href="##">用户评价(<b style="color:orange">0000</b>)</a>
             </li>
             <li>
               <a href="##">购物保障</a>
@@ -665,16 +670,16 @@
         font-size 20px
     #content
       width 1200px
-      height 890  px
+      height 750px
       display flex
       // background #E8CCFF
       margin 5px auto  0
-      border 1px solid #a4cf61
+      border 1px solid #f2f2f2
       .leftContent
         width 520px
         height 650px
         margin 33px 0 0 73px
-        background 	#FF69B4 
+        // background 	#FF69B4 
         .smallImg
           margin-top 15px
           display flex
@@ -708,34 +713,40 @@
         .price
           margin-top 60px      
         .message
-          width 560px
+          width 518px
           height 42px
           background #e5e5e5
           display flex
-          justify-content space-around
+          // justify-content space-around
           margin-top 17px
+          p
+            margin-left 20px
+            font-size 15px
+          img
+            width 100px
+            height 30px
+            margin 8px 0 0 5px
         .buy
-          button  
+          display flex
+          button 
             width 160px
             height 50px
             margin-top 17px
             font-size 20px
             color white
           .collect
-            width 80px
-            height 34px
-            background rgba(0,0,0,0)
-            margin-left 17px
+            margin 35px 0 0 30px
+              
   footer 
     width 1200px
     height 4550px
-    background #99CC66
+    // background #99CC66
     margin 15px auto 0
     display flex
     .leftFooter 
       width 210px
       height 2000px
-      background #FFFFCC
+      // background #FFFFCC
       border 1px #e5e5e5 solid
       .details
         height 140px
@@ -759,7 +770,7 @@
       .shops
         height 1850px
         margin-top 15px
-        background #FFCCCC
+        // background #FFCCCC
         p
           width 208px
           height 35px
@@ -788,7 +799,7 @@
     .rightFooter 
       height 4550px
       width 970px
-      background orange   
+      // background orange   
       margin-left 17px
       .lead
         ul
@@ -796,20 +807,20 @@
           li
             width 110px
             height 40px
-            background red
+            //  
             line-height 40px
             text-align center
             border 1px #7e8c8d solid 
       .photo
         height 3065px
-        background yellow
+        // background yellow
         border 1px #7e8c8d solid
         img
           margin 10px 0 0 100px
       .evaluate
         height 760px
         width 970px
-        background yellow
+        // background yellow
         border 1px #7e8c8d solid
         ul
           li
@@ -848,6 +859,7 @@
         .title
           display flex
           justify-content space-around 
+          margin-top 20px
           .iconfont
             color #ff6600
             font-size 80px
@@ -882,13 +894,7 @@
         margin-top 10px 
         li
           display flex
-          justify-content center 
-
-
-
-        
-      
-        
+          justify-content center         
 </style>
 
  
