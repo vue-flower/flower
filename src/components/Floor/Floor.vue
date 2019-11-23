@@ -80,7 +80,7 @@ export default {
 .floor1
   width 1200px
   height 668px
-  margin 0 auto
+  margin 50px auto
 
   .floor-title
     display flex
@@ -139,6 +139,9 @@ export default {
             box-sizing border-box
             padding 0 0 10px 0
             p 
+              white-space nowrap
+              text-overflow ellipsis
+              overflow hidden
               font-size 12px
             h5
               font-size 14px

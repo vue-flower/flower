@@ -61,19 +61,6 @@
           </div>
         </a>
       </li>     
-      <li>
-        <a href="">
-          <img src="https://img02.hua.com/tuijian/xianshi_9012446.jpg" alt="">
-          <div class="advise">
-            <p class="advise-desc">满天星</p>
-            <p class="advise-price">￥<span>198</span></p>
-            <p class="advise-discount">
-              <img src="https://img02.hua.com/tuijian/tuijian_arrow.png" alt="">
-              <span>直降58元</span>
-            </p>
-          </div>
-        </a>
-      </li>
     </ul>
   </div>
 </template>

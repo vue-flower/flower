@@ -1,11 +1,13 @@
 <template>
   <div >
-    <router-link to="/home">首页</router-link>
-    <router-link to="/flower">鲜花</router-link>
-    <router-link to="/yongshenghua">永生花</router-link>
-    <router-link to="/product">详情</router-link>
-    <router-link to="/login">登陆</router-link>
-    <router-link to="/cake">蛋糕</router-link>
+    <div class="router">
+      <router-link to="/home">首页</router-link>
+      <router-link to="/flower">鲜花</router-link>
+      <router-link to="/yongshenghua">永生花</router-link>
+      <router-link to="/product">详情</router-link>
+      <router-link to="/login">登陆</router-link>
+      <router-link to="/cake">蛋糕</router-link>
+    </div>
 
     <router-view></router-view>
   </div>
@@ -17,6 +19,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus" scoped>
+  .router
+    position fixed
+    top 0
+    left 0
+    font-size 20px
 </style>
+
