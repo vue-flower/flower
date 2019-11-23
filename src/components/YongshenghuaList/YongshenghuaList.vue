@@ -25,9 +25,32 @@
 </template>
 
 <script>
-export default {
+import {mapState,mapGetters} from 'vuex'
+  export default {
+    data(){
+      return {
 
-}
+      }
+    },
+
+    mounted(){
+      //分发获取永生花列表
+      setTimeout(() => {
+            this.$store.dispatch('getFlowerList')
+            // this.loadingInstance.close()
+        }, 2000);
+
+
+    },
+
+    computed: {
+      ...mapState({
+        yongshenghuaList: state => state.yongshenghuaList 
+      })
+    }
+
+
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
