@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 import router from '../src/router'
 import App from './App.vue'
+import * as API from './api'
 // import ViewUI from 'view-design';
 // import 'view-design/dist/styles/iview.css';
 import ElementUI from 'element-ui';
@@ -57,6 +58,8 @@ Vue.use(Input);
 Vue.use(FormItem);
 Vue.use(Tabs);
 Vue.use(TabPane,);
+
+Vue.prototype.$API = API
 
 new Vue({
   components:{
