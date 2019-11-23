@@ -33,6 +33,7 @@ import Ad from './components/Ad/Ad'
 import TimeLimit from './components/TimeLimit/TimeLimit.vue'
 import Floor from './components/Floor/Floor'
 import LoginItem from './components/Login/LoginItem'
+import Test from './components/test/tset'
 
 Vue.config.productionTip = false
 
@@ -48,6 +49,7 @@ Vue.component('Ad',Ad)
 Vue.component('TimeLimit',TimeLimit)
 Vue.component('Floor',Floor)
 Vue.component('LoginItem',LoginItem)
+Vue.component('Test',Test)
 
 Vue.use(Button)
 Vue.use(Select)
