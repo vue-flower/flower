@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(el, index) in arrItem" :key="index">
@@ -55,14 +55,14 @@ export default {
   
 <style lang="stylus" rel="stylesheet/stylus">
     .banner
-        width 100%
-        height 400px
-        // overflow hidden
-        .swiper-container
-            .swiper-wrapper
-                .swiper-slide
-                    .img
-                        width 100%
-                        height 400px
+      width 100%
+      height 400px
+      overflow hidden
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .img
+              width 100%
+              height 400px
 
 </style>
