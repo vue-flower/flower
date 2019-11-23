@@ -1,5 +1,4 @@
 import { SAVE_FLOOR } from '../mutations-types'
-import { floorList } from '../../api'
 import { reqFloor} from '../../api'
 import {chunk} from 'lodash/array'
 

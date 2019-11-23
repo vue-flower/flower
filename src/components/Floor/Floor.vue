@@ -49,7 +49,6 @@ export default {
   },
   data() {
     return {
-      i:0
 
     }
   },

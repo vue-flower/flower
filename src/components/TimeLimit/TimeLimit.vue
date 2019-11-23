@@ -9,54 +9,15 @@
       </div>
     </div>
     <ul>
-      <li>
+      <li v-for="(limit, index) in limitList" :key="index">
         <a href="">
-          <img src="https://img02.hua.com/tuijian/xianshi_9012446.jpg" alt="">
+          <img :src="limit.imgsrc" alt="">
           <div class="advise">
-            <p class="advise-desc">满天星</p>
-            <p class="advise-price">￥<span>198</span></p>
+            <p class="advise-desc">{{limit.Cpmc}}</p>
+            <p class="advise-price">￥<span>{{limit.Price}}</span></p>
             <p class="advise-discount">
               <img src="https://img02.hua.com/tuijian/tuijian_arrow.png" alt="">
-              <span>直降58元</span>
-            </p>
-          </div>
-        </a>
-      </li>   
-      <li>
-        <a href="">
-          <img src="https://img02.hua.com/tuijian/xianshi_9012446.jpg" alt="">
-          <div class="advise">
-            <p class="advise-desc">满天星</p>
-            <p class="advise-price">￥<span>198</span></p>
-            <p class="advise-discount">
-              <img src="https://img02.hua.com/tuijian/tuijian_arrow.png" alt="">
-              <span>直降58元</span>
-            </p>
-          </div>
-        </a>
-      </li>  
-      <li>
-        <a href="">
-          <img src="https://img02.hua.com/tuijian/xianshi_9012446.jpg" alt="">
-          <div class="advise">
-            <p class="advise-desc">满天星</p>
-            <p class="advise-price">￥<span>198</span></p>
-            <p class="advise-discount">
-              <img src="https://img02.hua.com/tuijian/tuijian_arrow.png" alt="">
-              <span>直降58元</span>
-            </p>
-          </div>
-        </a>
-      </li>  
-      <li>
-        <a href="">
-          <img src="https://img02.hua.com/tuijian/xianshi_9012446.jpg" alt="">
-          <div class="advise">
-            <p class="advise-desc">满天星</p>
-            <p class="advise-price">￥<span>198</span></p>
-            <p class="advise-discount">
-              <img src="https://img02.hua.com/tuijian/tuijian_arrow.png" alt="">
-              <span>直降58元</span>
+              <span>直降{{limit.discount}}元</span>
             </p>
           </div>
         </a>
@@ -66,8 +27,27 @@
 </template>
   
 <script type="text/ecmascript-6">
+import {mapGetters, mapState} from 'vuex'
   export default {
-  
+    data() {
+      return {
+        
+      }
+    },
+    // components:{
+    //   limitList
+    // },
+    mounted() {
+      this.$store.dispatch('getLimit')
+      // setTimeout(() => {
+        // }, 2000);
+    },
+    computed:{
+      ...mapState({
+        limitList : state => state.limit.limitList
+      })
+
+    }
   }
 </script>
   
@@ -97,9 +77,11 @@
       justify-content space-between  
       li
         height 200px
+        width 240px
         position relative
         border 1px solid #e5e5e5
         a
+          width 
           .advise
             position absolute
             left 10px
