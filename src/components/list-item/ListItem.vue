@@ -1,26 +1,53 @@
 <template>
   <div class="container">
     <div class="wrap">
-      <a href=""><img class="flower-img" :src="`http://img01.hua.com/uploadpic/newpic/${flower.ItemCode}.jpg_220x240.jpg`" alt=""></a>
+      <img class="flower-img" v-lazy="`http://img01.hua.com/uploadpic/newpic/${flower.ItemCode}.jpg_220x240.jpg`" alt="">
       <span class="price">￥{{flower.Price}}</span>
       <a href="" class="detail">
         <p class="des">{{flower.Instro}}</p>
         <p class="keys">{{flower.Cpmc}}</p>
       </a>
       <div class="btns">
-        <button class="star">收藏</button>
-        <button class="car">加入购物车</button>
+        <button class="star"  @click.prevent="star(flower)" >
+          <i class="iconfont iconaixin1-copy" ref="isStar" :style="{color:isChoose? '#ff6a00':'#888'}"></i>收藏
+        </button>
+        <button class="car">
+          <i class="iconfont icongouwuchekong"></i>加入购物车
+        </button>
       </div>
     </div>
+
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import { SAVE_STAR } from '../../store/mutations-types'
   export default {
+    data(){
+      return {
+        isChoose: false
+      }
+    },
     props:{
       flower:{
         type: Object,
         required: true
+      }
+    },
+    mounted(){
+      
+    },
+    methods: {
+      star(flower){
+        let { isChoose } = this
+        if(isChoose === false){
+          // 没有选中-收藏
+          this.$store.commit(SAVE_STAR,{flower:flower,isStar:true})
+        }else{
+          // 选中-取消收藏
+          this.$store.commit(SAVE_STAR,{flower:flower,isStar:false})
+        }
+        this.isChoose = !this.isChoose
       }
     }
   }
@@ -62,11 +89,17 @@
       .btns
         width 100%
         margin-bottom 0
+        cursor pointer
+        a:hover
+          color #ff6a00
         .star,.car
           width 50%
           height 26px
           line-height 24px
           font-size 12px
+          i
+            color #888
+
       
 
 

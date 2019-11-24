@@ -1,15 +1,7 @@
 <template>
   <div class="hot-city">
     <p>热门城市</p>
-    <ul class="nav-left">
-      <li><a  href="">综合</a></li>
-      <li>
-        <a href="">销量
-        </a>
-      </li>
-      <li><a href="">价格</a></li>
-      <li><a href="">最新</a></li>
-    </ul>
+    <slot></slot>
   </div>
 </template>
 

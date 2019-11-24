@@ -27,6 +27,10 @@ export default [
     component: Cake
   },
   {
+    path:'/test',
+    component: Cake
+  },
+  {
     path: '/',
     redirect: '/home'
   }

@@ -1,8 +1,8 @@
 import axios from 'axios'
+import qs from 'qs'
 
 import { BASE_PATH } from '../config'
-import { Loading } from 'element-ui';
-
+import  { Message  } from 'element-ui';
 const instance = axios.create({
   timeout: 10000,
   baseURL: BASE_PATH
@@ -10,7 +10,12 @@ const instance = axios.create({
 
 // 配置请求拦截器
 instance.interceptors.request.use(config => {
-    return config
+  const {data} = config
+  if (data instanceof Object) { // 只要data是对象就转换
+    config.data = qs.stringify(data)
+  }
+  console.log('携带的参数',config)
+  return config
 })
 
 instance.interceptors.response.use(
@@ -22,6 +27,13 @@ instance.interceptors.response.use(
     loadingInstance.close()
     if(status === 404){
       alert('请求资源不存在')
+      Message.error({
+        message: '请求资源不存在',
+        type: 'warning',
+        duration:2000,
+        center:true
+      })
+
     }
     // 中断promise链
     return new Promise(()=>{})
