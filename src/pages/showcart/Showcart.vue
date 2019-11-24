@@ -45,15 +45,20 @@
             </p>
             
           </li>
-          <li class="num">
-            <div><el-input-number v-model="num" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number></div>
+        
 
-          </li>
+          <el-input-number v-model="num" @change="handleChange"  :min="1" :max="10" label="描述文字"></el-input-number>
+
+
           <li class="operate">
-           <a href="">删除</a>
-
-           <a class="wode" href="">移动到我收藏</a>
+           <div >
+             <a href="">删除</a>
+           </div>
+            <div>
+              <a class="wode" href="">移动到我收藏</a>
+            </div>
           </li>
+        
          
         </ul>
       </div>
@@ -115,6 +120,8 @@
 
     </div>
 
+
+
   </div>
   
 
@@ -137,6 +144,10 @@
     }
   };
 
+
+
+
+
   
 </script>
 
@@ -151,23 +162,28 @@
     border 1px solid #999999
      
     .order-title
-       
       width 988px
       height 41px
       background #ebebeb
       margin 0 auto
       line-height 41px
-
- 
-
+      // position relative
       display flex
       li
         font-size 15px
         font-weight bold
-        padding 10px 0
+        // padding 10px 0
         height 41px
         line-height 25px
-        color #737373 
+        color #737373
+      .el-input-number
+        position relative
+        top 100px
+        left 20px
+     
+        // left 20%
+        // margin-left 40px
+        
       .product
         width 432px
       .selecter
@@ -186,7 +202,7 @@
 
 
       .num
-        width 120px
+       
       .operate
         width 120px
 
@@ -195,6 +211,7 @@
       margin 0 auto
       display flex
       width 988px
+      // flex-wrap nowrap
 
       li
         height 88px
@@ -233,6 +250,9 @@
           margin-left 30px
 
       .operate
+        div
+          height 20px
+          width 100px
         // width 120px
         a
           font-size 15px

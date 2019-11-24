@@ -13,6 +13,10 @@ import TopHeader from './components/TopHeader/TopHeader'
 
 import ElementUI from 'element-ui'
 
+import { InputNumber,} from 'element-ui';
+
+Vue.use(InputNumber);
+
 
 
 
