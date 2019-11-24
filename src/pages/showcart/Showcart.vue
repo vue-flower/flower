@@ -131,6 +131,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+  //发请求
   export default {
     data() {
       return {
