@@ -1,3 +1,4 @@
 export default {
-  first:'外层'
+  user:{},
+  token:''
 }

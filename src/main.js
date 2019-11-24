@@ -15,7 +15,8 @@ import {
   Input,
   FormItem,
   Tabs,
-  TabPane,} from 'element-ui';
+  TabPane,
+  Message} from 'element-ui';
 // Vue.config.productionTip = false
 // Vue.use(ElementUI);
 
@@ -59,8 +60,10 @@ Vue.use(Form);
 Vue.use(Input);
 Vue.use(FormItem);
 Vue.use(Tabs);
-Vue.use(TabPane,);
+Vue.use(TabPane);
+// Vue.use(Message);
 
+Vue.prototype.$message = Message;
 Vue.prototype.$API = API
 
 new Vue({

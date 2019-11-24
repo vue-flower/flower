@@ -1,23 +1,30 @@
 <template>
   <!-- 账号登录 -->
   <div class="child3">
-    <el-form :model="ruleForm" status-icon :rules="rules" class="demo-ruleForm">
-      <el-form-item prop="account">
+    <el-form
+      :model="ruleForm"
+      status-icon
+      :rules="rules"
+      ref="ruleForm"
+      class="demo-ruleForm"
+    >
+      <el-form-item prop="phone">
         <el-input
+          maxlength="11"
+          minlength="11"
           placeholder="请输入手机号"
-          v-model="ruleForm.account"
+          v-model="ruleForm.phone"
         ></el-input>
       </el-form-item>
-      <el-form-item prop="pass">
-        <el-input 
+      <el-form-item prop="code">
+        <el-input
           placeholder="请输入验证码"
-          v-model="ruleForm.pass"
+          maxlength="4"
+          show-word-limit
+          v-model="ruleForm.code"
           type="password"
-
         ></el-input>
-          <el-button class="captch"
-            >发送验证码</el-button
-          >
+        <el-button class="captch">发送验证码</el-button>
       </el-form-item>
     </el-form>
     <div class="login-box-footer">
@@ -27,7 +34,8 @@
             class="login"
             type="primary"
             round
-            @click="submitForm('dynamicValidateForm')"
+            
+            @click="submitForm()"
             >登陆</el-button
           >
           <el-button type="info" class="pass" plain>一键快捷注册></el-button>
@@ -39,61 +47,49 @@
 
 <script>
 export default {
-  name: "child2",
+  name: "child3",
   data() {
-    return {
 
+    return {
       //前台表单验证
       ruleForm: {
-        account: "",
-        pass: ""
+        code: "",
+        phone: ""
       },
       rules: {
-        account: [{ validator: checkAccount, trigger: "blur" }],
-        pass: [{ validator: validatePass, trigger: "blur" }]
+        phone: [{ validator: checkPhoneNumber, trigger: "blur" }],
+        code: [{ validator: checkCode, trigger: "blur" }]
       }
     };
 
-    var checkAccount = (rule, value, callback) => {
+    var checkPhoneNumber = (rule, value, callback) => {
+      console.log(this)
       if (value === "") {
         callback(new Error("请输入账号"));
       }
     };
 
-    var validatePass = (rule, value, callback) => {
+    var checkCode = (rule, value, callback) => {
       if (value === "") {
-        callback(new Error("请输入密码"));
+        callback(new Error("验证码"));
       } else {
         // console.log(validate)
         callback();
       }
     };
-
-    // if (event in) {
-
-    // }
   },
-  // methods: {
-  //   //登陆验证
-  //   async login(){
-  //     let {phone, code, username, password,isPassWordLogin} = this
-  //   //添加验证选项
-  //   let names = isPassWordLogin?['name', 'password']: ['phone', 'code']
-  //   // const success = await this.$validator.validatorAll(names)
 
-  //   }
-  // },
   methods: {
-    submitForm(formName) {
-      this.$refs[formName].validate(valid => {
-        if (valid) {
-          console.log(this.$refs);
-          alert("submit!");
-        } else {
-          console.log("error submit!!");
-          return false;
-        }
-      });
+
+
+    submitForm() {
+      console.log(this.ruleForm.code.length)
+      if(/^1[3456789]\d{9}$/.test(this.ruleForm.phone) && this.ruleForm.code.length === 4){
+        this.$store.dispatch('getUserAction',{user: this.ruleForm.account})
+        this.$router.replace('/home')
+      }else{
+        this.$message('请检查信息')
+      }
     }
   }
 };

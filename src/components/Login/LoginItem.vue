@@ -9,7 +9,7 @@
         label="账号密码登陆"
         name="second" :key="'second'"
       >
-      <child2></child2>
+      <child2 ></child2>
       </el-tab-pane>
 
       <el-tab-pane
@@ -36,7 +36,9 @@ export default {
   data() {
     return {
       //默认第一个选项卡
-      activeName: "second"
+      // activeName: "first",
+      // activeName: "second",
+      activeName: "third",
     };
   },
   mounted() {}
