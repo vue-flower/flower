@@ -35,7 +35,7 @@
           </li>
           <li class="market-price">
             <p> <span>$</span>
-            <span>766</span></p>
+            <span class="orderPratice">766</span></p>
            
           </li>
           <li class="order-price">
@@ -76,7 +76,7 @@
       <div class="set-stat">
         
           <span class="price-sign">应付金额:</span>
-          <span class="price-num">¥534</span>
+          <span class="price-num">¥{{allMoney}}</span>
 
       </div>
       <button>去结算</button>
@@ -135,13 +135,18 @@
   export default {
     data() {
       return {
-        num: 1
+        num: 1,
+        allMoney: 0
       };
     },
     methods: {
       handleChange(value) {
         console.log(value);
       }
+    },
+
+    computed: {
+
     }
   };
 
