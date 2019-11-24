@@ -1,6 +1,7 @@
 let express = require('express')
 
-let flower = require('./datas/flower')
+// let flower = require('./datas/flower')
+let yongshenghua = require('./datas/flower')
 let app = new express()
 
 app.get('/login',(req,res) => {})
@@ -9,6 +10,12 @@ app.get('/login',(req,res) => {})
 app.get('/flowerList',(req,res) => {
   res.send(flower)
 })
+
+
+app.get('/yongshenghua',(req,res) => {
+  res.send(yongshenghua)
+})
+
 
 
 app.listen('3000',() => {

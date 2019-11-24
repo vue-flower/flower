@@ -16,7 +16,10 @@ const actions = {
     let result = await reqYongshenghuaList()
     // 2.调用mutation，数据交给mutation
     if(result.Status === '0'){
-      commit(SAVE_YONGSHENGHUA,result.Datas.ProductPrices)
+      // commit(SAVE_YONGSHENGHUA,result.Datas.ProductPrices)
+
+      commit(SAVE_YONGSHENGHUA,result.datas)
+
     } 
   }
 }

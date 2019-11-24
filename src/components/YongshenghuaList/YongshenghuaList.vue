@@ -36,7 +36,7 @@ import {mapState,mapGetters} from 'vuex'
     mounted(){
       //分发获取永生花列表
       setTimeout(() => {
-            this.$store.dispatch('getFlowerList')
+            this.$store.dispatch('getYongshenghuaList')
             // this.loadingInstance.close()
         }, 2000);
 
