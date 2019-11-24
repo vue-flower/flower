@@ -8,11 +8,14 @@ app.get('/login',(req,res) => {})
 
 // let flower = require('./datas/flower')
 app.get('/flowerList',(req,res) => {
+
   res.send(flower)
 })
 
 
 app.get('/yongshenghua',(req,res) => {
+  console.log(111)
+
   res.send(yongshenghua)
 })
 

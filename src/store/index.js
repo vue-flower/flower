@@ -6,14 +6,16 @@ import mutations from './mutations'
 import actions from './actions'
 import getters from './getters'
 
-import flower from './modules/flower'
+
+import yongshenghua from './modules/yongshenghua'
+
 
 Vue.use(Vuex)
 
 
 const store =  new Vuex.Store({
   modules:{
-    flower
+    yongshenghua
   },
   state,
   mutations,

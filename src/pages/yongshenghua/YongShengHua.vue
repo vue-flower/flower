@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 头部 -->
-    <div class="header">
+    <!-- <div class="header">
       <div class="container">
         <ul class="container-list-left">
           <li class="container-list-li-left">
@@ -57,7 +57,9 @@
         </ul>
 
       </div> 
-    </div>
+    </div> -->
+
+    <TopHeader/>
 
     <!-- 头部中间     -->
     <div class="header_middle">
@@ -153,76 +155,79 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" >
-  .header
-    display flex
-    width 100%
-    height 35px
-    background #f2f2f2
-    font-size 15px
-    color #737373
-    justify-content center 
-    .container
-      display  flex
-      width 1200px
-      height 35px
+  // .header
+  //   display flex
+  //   width 100%
+  //   height 35px
+  //   background #f2f2f2
+  //   font-size 15px
+  //   color #737373
+  //   justify-content center 
+  //   .container
+  //     display  flex
+  //     width 1200px
+  //     height 35px
       
-      .container-list-left
-        display flex
-        width 500px
-        height 35px
-        line-height 35px
-        .container-list-li-left
-          margin auto
-          width 185px
-          height 35px
-        .container-list-li-middle
-          margin auto
-          width 185px
-          height 35px
-          div
-            display none
-        .container-list-li-right
-          margin auto
-          width 185px
-          height 35px
-          div
-            display none
+  //     .container-list-left
+  //       display flex
+  //       width 500px
+  //       height 35px
+  //       line-height 35px
+  //       .container-list-li-left
+  //         margin auto
+  //         width 185px
+  //         height 35px
+  //       .container-list-li-middle
+  //         margin auto
+  //         width 185px
+  //         height 35px
+  //         div
+  //           display none
+  //       .container-list-li-right
+  //         margin auto
+  //         width 185px
+  //         height 35px
+  //         div
+  //           display none
 
-      .container-list-right
-        line-height 35px
-        display flex
-        height 35px
-        width 700px
-        background #f2f2f2
-        .loginAndRegister
-          width 140px
-          height 35px
+  //     .container-list-right
+  //       line-height 35px
+  //       display flex
+  //       height 35px
+  //       width 700px
+  //       background #f2f2f2
+  //       .loginAndRegister
+  //         width 140px
+  //         height 35px
           
-        .order
-          width 76px
-          height 35px
+  //       .order
+  //         width 76px
+  //         height 35px
           
-        .myflowers
-          width 76px
-          height 35px
+  //       .myflowers
+  //         width 76px
+  //         height 35px
           
-        .serve
-          width 76px
-          height 35px
+  //       .serve
+  //         width 76px
+  //         height 35px
           
-        .shoppingCart
-          width 76px
-          height 35px
+  //       .shoppingCart
+  //         width 76px
+  //         height 35px
           
 
-        .introduction
-          width 140px
-          height 35px
+  //       .introduction
+  //         width 140px
+  //         height 35px
           
           
-          a
-            color #000000
-            font-size 15px
+  //         a
+  //           color #000000
+  //           font-size 15px
+
+
+
 
   .header_middle
     width 1200px
