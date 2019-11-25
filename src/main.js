@@ -6,7 +6,11 @@ import App from './App.vue'
 
 import store from './store'
 
-import TopHeader from './components/TopHeader/TopHeader'
+// import TopHeader from './components/TopHeader/TopHeader'
+
+import TopNav from './components/TopNav/TopNav'
+import TopNavLeft from './components/TopNavLeft/TopNavLeft'
+import TopNavRight from './components/TopNavRight/TopNavRight'
 
 
 
@@ -21,7 +25,11 @@ Vue.use(InputNumber);
 
 
 //Vue全局注册组件的语法:Vue
-Vue.component('TopHeader',TopHeader)
+
+
+Vue.component('TopNav',TopNav)
+Vue.component('TopNavLeft',TopNavLeft)
+Vue.component('TopNavRight',TopNavRight)
 
 
 Vue.config.productionTip = false

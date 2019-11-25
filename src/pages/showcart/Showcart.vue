@@ -1,7 +1,94 @@
 <template>
 
   <div>
-    <div class="header"></div>
+    <header class="header">
+     
+      <div class="top-banner">
+        <nav class="top-nav">
+          <ul class="top-nav-left">
+            <li class="">
+              <a href="">
+                <span>收藏鲜花网(hua.com)</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>关注微信</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>花礼网app</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="top-nav-right">
+            <li>
+              <a href="">
+                <span>您好,请登录</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>注册</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>订单查询</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>我的花礼</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>客户服务</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>购物车</span>
+              </a>
+            </li>
+            <li>
+              <span>中国鲜花礼品网:中国鲜花网领先品牌</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- 顶部导航 end -->
+
+      <!-- 头部 start -->
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href=""><img src="../../image/静态图片/home/ia_200000105.png" alt="" /></a>
+          </h1>
+        </div>
+
+        <!-- <div class="search">
+          <input type="text" placeholder="商品关键字" />
+          <button>搜索</button>
+        </div> -->
+
+        <div class="service">
+          <div>
+            <span>400-889-8188</span>
+          </div>
+          <div>
+            <span>在线客服</span>
+          </div>
+        </div>
+      </div>
+      <!-- 头部 end -->
+    </header>
+  
+
+
+   
 
     <div class="order">
       <div>
@@ -46,9 +133,9 @@
             
           </li>
         
-
-          <el-input-number v-model="num" @change="handleChange"  :min="1" :max="10" label="描述文字"></el-input-number>
-
+          <li  class="anniu">
+          <el-input-number v-model="num" @change="handleChange"  :min="1" :max="10" label="描述文字" size="small"></el-input-number>
+          </li>
 
           <li class="operate">
            <div >
@@ -76,7 +163,7 @@
       <div class="set-stat">
         
           <span class="price-sign">应付金额:</span>
-          <span class="price-num">¥{{allMoney}}</span>
+          <span class="price-num">¥766</span>
 
       </div>
       <button>去结算</button>
@@ -84,45 +171,52 @@
     </div>
 
     <!-- 服务 -->
-    <div class="cart-server">
-      <div class="toper-server">
-        <ul>
-           <li >
-                    <span class="iconfont icon-packaging"></span>
-                    <h4>鲜花电商龙头</h4>
-                    <p>销量领先</p>
-            </li>
-            <li>
-                    <span class="iconfont icon-Salescenter"></span>
-                    <h4>鲜花电商龙头</h4>
-                    <p>龙头企业</p>
-            </li>
-            <li>
-                    <span class="iconfont icon-collection-fill"></span>
-                    <h4>鲜花电商龙头</h4>
-                    <p>龙头企业</p>
-            </li>
-            <li>
-                    <span class="iconfont icon-collection-fill"></span>
-                    <h4>鲜花电商龙头</h4>
-                    <p>龙头企业</p>
-            </li>
-            <li>
-                    <span class="iconfont icon-collection-fill"></span>
-                    <h4>鲜花电商龙头</h4>
-                    <p>龙头企业</p>
-            </li>
+    
 
-            
-
+    <div class="ad-container">
+        <ul class="ad-container-ul">
+          <li>
+              <img src="../../common/images/common_qz.png" alt="">
+            <a href="">
+              <h4>鲜花电商龙头</h4>
+              <span>销量领先，权威认证龙头企业</span>
+            </a>
+          </li>   
+          <li>
+              <img src="../../common/images/common_qz.png" alt="">
+            <a href="">
+              <h4>鲜花电商龙头</h4>
+              <span>销量领先，权威认证龙头企业</span>
+            </a>
+          </li>    
+          <li>
+              <img src="../../common/images/common_qz.png" alt="">
+            <a href="">
+              <h4>鲜花电商龙头</h4>
+              <span>销量领先，权威认证龙头企业</span>
+            </a>
+          </li>   
+          <li>
+              <img src="../../common/images/common_qz.png" alt="">
+            <a href="">
+              <h4>鲜花电商龙头</h4>
+              <span>销量领先，权威认证龙头企业</span>
+            </a>
+          </li>    
+          <li>
+              <img src="../../common/images/common_qz.png" alt="">
+            <a href="">
+              <h4>鲜花电商龙头</h4>
+              <span>销量领先，权威认证龙头企业</span>
+            </a>
+          </li>
+      
         </ul>
       </div>
 
+
+
     </div>
-
-
-
-  </div>
   
 
 
@@ -159,9 +253,78 @@
 
 <style lang="stylus" rel="stylesheet/stylus" >
   .header
-    width 1200px
-    height 300px
-    background pink
+    .top-banner 
+      width: 100%;
+      // height 116px
+      background: #f2f2f2;
+
+      .top-nav 
+        height: 35px;
+        width: 1200px;
+        margin: 0 auto;
+        line-height: 35px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        .top-nav-left 
+          width: 348px;
+          display: flex;
+          justify-content: space-between;
+          a
+            color: #737373;
+          // background-color red
+        
+
+        .top-nav-right 
+          width: 632px;
+          display: flex;
+          justify-content: space-between;
+          // background-color yellow
+          a
+            color: #737373;
+      
+    
+
+    .header 
+      height 120px
+      width 1200px
+      margin 0 auto
+      display flex
+      justify-content space-between
+      align-items center
+
+      // background-color pink
+      .logo 
+        display flex
+        justify-content: center
+        align-items center
+      
+
+      .search 
+        height 34px
+
+        
+
+       
+        
+      
+
+      .service 
+        width 252px
+        display flex
+        justify-content space-between
+        color #737373
+        font-size 14px
+        line-height 20px
+
+
+    
+
+
+
+
+  
   .order
     width 988px
     margin 0 auto
@@ -203,6 +366,12 @@
         width 120px
       .order-price
         width 120px
+
+      .anniu
+        position relative 
+        top 105px 
+        left 2px
+        margin-right 10px
 
        
 
@@ -299,34 +468,33 @@
       height 52px
       background #ff6a00
       border none
-  .cart-server
-    margin-top 30px
-    // width 1423px
-    height 162px 
-    .toper-server
-      width 990px
-      height 120px
-      margin 0 auto
-      ul
-        display flex
-        flex-wrap wrap
-        span
-          float left
-          margin-left 10px
-          font-size 35px
-          margin-top 5px
-        h4
-          margin-left 30px
-          font-size 16px
-          color  #4d4d4d
-          margin-bottom 10px
-          
-        p
-          margin-left 40px
+  
 
-          font-size 15px
-          color  #999999
-          white-space : normal nowrap
+  .ad-container
+      width 1200px
+      margin 20px auto
+      height 120px
+      // background pink
+      .ad-container-ul
+        display flex
+        justify-content space-between
+        li
+          width 240px
+          // height 120px
+          padding 30px 0
+          display flex
+          // flex-direction column
+          align-items center
+          a
+            h4
+              font-size 16px
+              color #4d4d4d
+            span
+              font-size  12px 
+              color #999
+
+
+
 
 
 

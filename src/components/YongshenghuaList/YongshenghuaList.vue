@@ -10,11 +10,12 @@
         <li v-for="(flowers,index) in yongshenghuaList " :key="index">
           
           <a href="##">
-            <img src="../../image/静态图片/永生花/ia_600000007.jpg" alt="">
+            <img :src="`https://img01.hua.com/uploadpic/newpic/${flowers.ItemCode}.jpg_220x240.jpg`" alt="">
+
             <h4>{{flowers.Cpmc}}</h4>
-            <h6>永生花我如此爱你</h6>
+            <h6>{{flowers.Instro}}</h6>
             <h5>永生花台灯</h5>
-            <h5>$398</h5>
+            <h5>{{flowers.Price}}</h5>
           </a>
         </li>
 
@@ -52,7 +53,7 @@ import {mapState} from 'vuex'
 
     computed: {
       ...mapState({
-        yongshenghuaList: state => state.yongshenghuaList 
+        yongshenghuaList: state => state.yongshenghua.yongshenghuaList 
       })
     }
 

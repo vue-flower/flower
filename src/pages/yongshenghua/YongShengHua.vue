@@ -1,5 +1,94 @@
 <template>
   <div>
+    <header class="header">
+        <div class="activity">
+          <a href=""><img src="https://img02.hua.com/pc/images/pc_newuser_order_100.png" /></a>
+        </div>
+
+        <div class="top-banner">
+          <nav class="top-nav">
+            <ul class="top-nav-left">
+              <li class="">
+                <a href="">
+                  <span>收藏鲜花网(hua.com)</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>关注微信</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>花礼网app</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="top-nav-right">
+              <li>
+                <a href="">
+                  <span>您好,请登录</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>注册</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>订单查询</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>我的花礼</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>客户服务</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>购物车</span>
+                </a>
+              </li>
+              <li>
+                <span>中国鲜花礼品网:中国鲜花网领先品牌</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 顶部导航 end -->
+
+        <!-- 头部 start -->
+        <div class="header">
+          <div class="logo">
+            <h1>
+              <a href=""><img src="../../image/静态图片/home/ia_200000105.png" alt="" /></a>
+            </h1>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="商品关键字" />
+            <button>搜索</button>
+          </div>
+          <div class="service">
+            <div>
+              <span>400-889-8188</span>
+            </div>
+            <div>
+              <span>在线客服</span>
+            </div>
+          </div>
+        </div>
+        <!-- 头部 end -->
+      </header>
+    
+
+
+
     <!-- 头部 -->
     <!-- <div class="header">
       <div class="container">
@@ -59,16 +148,22 @@
       </div> 
     </div> -->
 
-    <TopHeader/>
+    <!-- <TopHeader/> -->
 
-    <!-- 头部中间     -->
-    <div class="header_middle">
-     
-    </div>
+   
     <!-- 导航列表 -->
     <nav class="common">
-      <div class="container"></div>
+      <TopNav/>
+
     </nav>
+
+    
+
+
+
+
+
+
 
     <!-- 大图片 -->
     <div class="big-photo">
@@ -79,14 +174,16 @@
     <div class="filter">
       <div class="filter-top">
         <ul>
-          <li class="allred"><a class="allred" href="" >综合</a> </li>
+          <li class="allred"><a class="allred" href="##" >综合</a> </li>
+          <!-- <li class="allred"><router-link to="/">订餐</router-link> </li> -->
            
-          <li class=""> <a href="">销量</a></li>
-          <li class=""><a href="">价格</a></li>
-          <li class=""> <a href="">最新</a></li>
+          <li class=""> <a href="##">销量</a></li>
+          <li class=""><a href="##">价格</a></li>
+          <li class=""> <a href="##">最新</a></li>
 
       
         </ul>
+        <router-view></router-view>
       
 
       </div>
@@ -97,21 +194,21 @@
         <ul class="filter-fotter-sort" >
           <!-- <li class="allred"><a class="first" href="" >综合</a> </li> -->
            
-          <li class=""> <a class="quanbu" href="">分类:</a></li>
+          <li class=""> <a class="quanbu" href="##">分类:</a></li>
           <li class=""><a href="">全部</a></li>
-          <li class="active"> <a href="">经典花盒</a></li>
-          <li class="active"> <a href="">巨型玫瑰</a></li>
-          <li class="active"> <a href="">永生瓶花</a></li>
-          <li class="active"> <a href="">特色永生花</a></li>
+          <li class="active"> <a href="##">经典花盒</a></li>
+          <li class="active"> <a href="##">巨型玫瑰</a></li>
+          <li class="active"> <a href="##">永生瓶花</a></li>
+          <li class="active"> <a href="##">特色永生花</a></li>
         </ul>
 
         <ul class="filter-fotter-people">
           <!-- <li class="allred"><a class="first" href="" >综合</a> </li> -->
            
-          <li class=""> <a href="">人群:</a></li>
-          <li class=""><a href="">送恋人爱人</a></li>
-          <li class=""> <a href="">送父母长辈</a></li>
-          <li class=""> <a href="">送朋友同事</a></li>
+          <li class=""> <a href="##">人群:</a></li>
+          <li class=""><a href="##">送恋人爱人</a></li>
+          <li class=""> <a href="##">送父母长辈</a></li>
+          <li class=""> <a href="##">送朋友同事</a></li>
          
         </ul>
 
@@ -155,6 +252,90 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" >
+  .header
+    .top-banner 
+      width: 100%;
+      // height 116px
+      background: #f2f2f2;
+
+      .top-nav 
+        height: 35px;
+        width: 1200px;
+        margin: 0 auto;
+        line-height: 35px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        .top-nav-left 
+          width: 348px;
+          display: flex;
+          justify-content: space-between;
+          a
+            color: #737373;
+          // background-color red
+        
+
+        .top-nav-right 
+          width: 632px;
+          display: flex;
+          justify-content: space-between;
+          // background-color yellow
+          a
+            color: #737373;
+      
+    
+
+    .header 
+      height 120px
+      width 1200px
+      margin 0 auto
+      display flex
+      justify-content space-between
+      align-items center
+
+      // background-color pink
+      .logo 
+        display flex
+        justify-content: center
+        align-items center
+      
+
+      .search 
+        height 34px
+
+        input 
+          width 238px
+          height 32px
+          // box-sizing border-box
+          border 1px solid #f56000
+        
+
+        button 
+          width 82px
+          height 34px
+          background #f56000
+          font-size 16px
+          color #fff
+          border 1px solid #f56000
+          position relative
+          top -5px
+          left 0px
+        
+      
+
+      .service 
+        width 252px
+        display flex
+        justify-content space-between
+        color #737373
+        font-size 14px
+        line-height 20px
+
+
+
+
+
   // .header
   //   display flex
   //   width 100%
