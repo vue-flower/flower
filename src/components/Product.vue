@@ -244,11 +244,11 @@
       <div class="leftFooter">
         <div class="details">
           <p>浏览记录</p>
-          <div class="special">
+          <div class="special" >
             <div class="little">
               <img src="./imgs/details1.jpg" alt="">
             </div>
-            <h1>温柔如你—戴安娜粉玫瑰12枝，石竹梅7枝
+            <h1 >温柔如你—戴安娜粉玫瑰12枝，石竹梅7枝
                 <br/><span style="color:#fe7a24">$239</span>
             </h1>
           </div>
@@ -257,71 +257,18 @@
         <div class="shops">
           <p>热销推荐</p>
           <ul class="shop">
-            <li>
+            <li v-for="(ProductPrice, index) in ProductPrices" :key="index">
               <a href="##">
-                <img src="./imgs/details2.jpg" alt="">
+                <img :src="`https://img01.hua.com/uploadpic/newpic/${ProductPrice.ItemCode}.jpg_220x240.jpg`" alt="">
                 <h1>
-                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                  鲜花/{{ProductPrice.Cpmc}}-{{ProductPrice.Instro}}
                 </h1>
-                <h2 style="color:#fe7a24">$235</h2>
+                <h2 style="color:#fe7a24">{{ProductPrice.Price}}</h2>
               </a> 
               <div class="cut"></div>
             </li>
 
-            <li>
-              <a href="##">
-                <img src="./imgs/details2.jpg" alt="">
-                <h1>
-                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
-                </h1>
-                <h2 style="color:#fe7a24">$235</h2>
-              </a> 
-              <div class="cut"></div>
-            </li>
-
-            <li>
-              <a href="##">
-                <img src="./imgs/details2.jpg" alt="">
-                <h1>
-                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
-                </h1>
-                <h2 style="color:#fe7a24">$235</h2>
-              </a> 
-              <div class="cut"></div>
-            </li>
-
-            <li>
-              <a href="##">
-                <img src="./imgs/details2.jpg" alt="">
-                <h1>
-                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
-                </h1>
-                <h2 style="color:#fe7a24">$235</h2>
-              </a> 
-              <div class="cut"></div>
-            </li>
-
-            <li>
-              <a href="##">
-                <img src="./imgs/details2.jpg" alt="">
-                <h1>
-                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
-                </h1>
-                <h2 style="color:#fe7a24">$235</h2>
-              </a> 
-              <div class="cut"></div>
-            </li>
-
-            <li>
-              <a href="##">
-                <img src="./imgs/details2.jpg" alt="">
-                <h1>
-                  鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
-                </h1>
-                <h2 style="color:#fe7a24">$235</h2>
-              </a> 
-              
-            </li>
+           
 
           </ul>
         </div>
@@ -560,7 +507,16 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import {mapState} from 'vuex'
   export default {
+    async mounted(){
+      this.$store.dispatch('getProductPricesAction')
+    },
+    computed: {
+      ...mapState({
+        ProductPrices: state => state.ProductPrices.ProductPrices
+      })
+    }
   }
 </script>
 

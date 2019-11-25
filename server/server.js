@@ -1,13 +1,14 @@
 let express = require('express')
 
-let flower = require('./datas/flower')
+let details = require('./datas/details.json')
 let app = new express()
 
-app.get('/login',(req,res) => {})
+
 
 // let flower = require('./datas/flower')
-app.get('/flowerList',(req,res) => {
-  res.send()
+
+app.get('/details',(req,res) => {
+  res.send(details)
 })
 
 
