@@ -1,5 +1,11 @@
-import request from './ajax'
+import ajax from './ajax'
 
-export const reqFlowerList = ()=> request.get('/flowerList')
+// 定义发送请求的方法
+
+export const getProductPricesAction = () => ajax({
+  url: '/details'
+})
+
+export const reqFlowerList = ()=> ajax.get('/flowerList')
 //永生花页面
-export const reqYongshenghuaList = ()=> request.get('yongshenghua')
+export const reqYongshenghuaList = ()=> ajax.get('yongshenghua')

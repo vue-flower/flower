@@ -1,8 +1,4 @@
 <template>
-    
-
-   
-
     <!-- 鲜花商品 -->
     <div class="flowersGoods">
       <ul>
@@ -18,9 +14,6 @@
             <h5>{{flowers.Price}}</h5>
           </a>
         </li>
-
-       
-
       </ul>
     </div>
     

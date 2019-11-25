@@ -1,0 +1,52 @@
+{
+  "Status": "0",
+  "ErrMsg": null,
+  "DataStatus": 200,
+  "Datas": {
+  "ProductPrices": [
+  {
+  "ItemCode": "9010966",
+  "Price": 239,
+  "LinePrice": 315,
+  "Cpmc": "一往情深",
+  "Instro": "精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎"
+  },
+  {
+  "ItemCode": "9012112",
+  "Price": 202,
+  "LinePrice": 259,
+  "Cpmc": "温柔如你",
+  "Instro": "戴安娜粉玫瑰12枝，石竹梅7枝"
+  },
+  {
+  "ItemCode": "9010949",
+  "Price": 206,
+  "LinePrice": 265,
+  "Cpmc": "恰似你的温柔",
+  "Instro": "精品玫瑰礼盒,香槟玫瑰11枝、深紫色勿忘我0.3扎"
+  },
+  {
+  "ItemCode": "9010947",
+  "Price": 198,
+  "LinePrice": 265,
+  "Cpmc": "真爱如初",
+  "Instro": "雪山玫瑰11枝、深紫色勿忘我0.3扎"
+  },
+  {
+  "ItemCode": "9012167",
+  "Price": 309,
+  "LinePrice": 395,
+  "Cpmc": "爱的小确幸",
+  "Instro": "戴安娜粉玫瑰21枝，粉色桔梗5枝，石竹梅7枝"
+  },
+  {
+  "ItemCode": "9012003",
+  "Price": 378,
+  "LinePrice": 485,
+  "Cpmc": "恋香",
+  "Instro": "精品玫瑰礼盒:香槟玫瑰33枝，少量绿叶"
+  }
+  ]
+  },
+  "HuaSessionId": null
+  }

@@ -7719,7 +7719,11 @@ stylus-loader@^3.0.2:
 
 stylus@^0.54.7:
   version "0.54.7"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/stylus/download/stylus-0.54.7.tgz#c6ce4793965ee538bcebe50f31537bfc04d88cd2"
+=======
+  resolved "https://registry.npm.taobao.org/stylus/download/stylus-0.54.7.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstylus%2Fdownload%2Fstylus-0.54.7.tgz#c6ce4793965ee538bcebe50f31537bfc04d88cd2"
+>>>>>>> YLL
   integrity sha1-xs5Hk5Ze5Ti86+UPMVN7/ATYjNI=
   dependencies:
     css-parse "~2.0.0"

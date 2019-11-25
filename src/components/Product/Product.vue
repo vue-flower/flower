@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="topImg" src="../image/top.png" alt="">
+    <img class="topImg" src="../../image/top.png" alt="">
     <header>
       <div id="nav">
         <ul class="leftNav">
@@ -75,7 +75,7 @@
       </div>
      
       <div id="search">
-        <img class="im" src="./imgs/1.jpg" alt="">
+        <img class="im" src="../imgs/1.jpg" alt="">
         <div class="import">
           <input type="text" placeholder="商品关键词"> 
           <button>搜索</button>
@@ -151,12 +151,12 @@
       </div>
       <div id="content">
         <div class="leftContent">
-          <img style="width:510px;height:520px" src="./imgs/huaa.jpg" alt="">
+          <img style="width:510px;height:520px" src="../imgs/huaa.jpg" alt="">
           <div class="smallImg">
-            <img src="./imgs/smallo.jpg" alt="">
-            <img src="./imgs/smallo.jpg" alt="">
-            <img src="./imgs/smallo.jpg" alt="">
-            <img src="./imgs/smallo.jpg" alt="">
+            <img src="../imgs/smallo.jpg" alt="">
+            <img src="../imgs/smallo.jpg" alt="">
+            <img src="../imgs/smallo.jpg" alt="">
+            <img src="../imgs/smallo.jpg" alt="">
           </div>
         </div>
         <div class="rightContent">
@@ -180,25 +180,25 @@
           <ul class="show">
             <li>
               <a href="##">
-                <img src="./imgs/small.jpg" alt="">
+                <img src="../imgs/small.jpg" alt="">
                 <span>一往情深</span>
               </a> 
             </li>
             <li>
               <a href="##">
-                <img src="./imgs/small.jpg" alt="">
+                <img src="../imgs/small.jpg" alt="">
                 <span>一往情深</span>
               </a> 
             </li>
             <li>
               <a href="##">
-                <img src="./imgs/small.jpg" alt="">
+                <img src="../imgs/small.jpg" alt="">
                 <span>一往情深</span>
               </a> 
             </li>
             <li>
               <a href="##">
-                <img src="./imgs/small.jpg" alt="">
+                <img src="../imgs/small.jpg" alt="">
                 <span>一往情深</span>
               </a> 
             </li>
@@ -212,7 +212,7 @@
 
           <div class="message">
             <p>促销信息:</p>
-            <img src="./imgs/appzx_01.jpg" alt="">
+            <img src="../imgs/appzx_01.jpg" alt="">
             <p style="color:orange;font-size:17px;margin-top:16px">$234</p>
             <p>
               <a href="##">去APP购买</a>
@@ -246,7 +246,7 @@
           <p>浏览记录</p>
           <div class="special" >
             <div class="little">
-              <img src="./imgs/details1.jpg" alt="">
+              <img src="../imgs/details1.jpg" alt="">
             </div>
             <h1 >温柔如你—戴安娜粉玫瑰12枝，石竹梅7枝
                 <br/><span style="color:#fe7a24">$239</span>
@@ -290,11 +290,11 @@
           </ul>
         </div>
         <div class="photo">
-          <img src="./imgs/photo1.jpg" alt="">
-          <img src="./imgs/photo2.jpg" alt="">
-          <img src="./imgs/photo3.jpg" alt="">
-          <img src="./imgs/photo4.jpg" alt="">
-          <img src="./imgs/photo5.jpg" alt="">
+          <img src="../imgs/photo1.jpg" alt="">
+          <img src="../imgs/photo2.jpg" alt="">
+          <img src="../imgs/photo3.jpg" alt="">
+          <img src="../imgs/photo4.jpg" alt="">
+          <img src="../imgs/photo5.jpg" alt="">
         </div>
 
         <div class="lead" style="margin-top:30px">
@@ -314,7 +314,7 @@
           <ul>
             <li>
               <div class="user">
-                <img src="./imgs/avatar.jpg" alt="">
+                <img src="../imgs/avatar.jpg" alt="">
                 <p>***********</p>
               </div>
             <div class="say">
@@ -325,7 +325,7 @@
               <p>第一次购买女优说很漂亮</p>
             </div>
             </li>
-            <img class="bought" src="./imgs/pos.jpg" alt="">
+            <img class="bought" src="../imgs/pos.jpg" alt="">
             <div class="pos">
                 <i class="iconfont icon-dingwei"></i>
                 <p>美国加利福尼亚</p>
@@ -337,7 +337,7 @@
           <ul>
             <li>
               <div class="user">
-                <img src="./imgs/avatar.jpg" alt="">
+                <img src="../imgs/avatar.jpg" alt="">
                 <p>***********</p>
               </div>
             <div class="say">
@@ -348,7 +348,7 @@
               <p>第一次购买女优说很漂亮</p>
             </div>
             </li>
-            <img class="bought" src="./imgs/pos.jpg" alt="">
+            <img class="bought" src="../imgs/pos.jpg" alt="">
             <div class="pos">
                 <i class="iconfont icon-dingwei"></i>
                 <p>美国加利福尼亚</p>
@@ -360,7 +360,7 @@
           <ul>
             <li>
               <div class="user">
-                <img src="./imgs/avatar.jpg" alt="">
+                <img src="../imgs/avatar.jpg" alt="">
                 <p>***********</p>
               </div>
               <div class="say">
@@ -371,7 +371,7 @@
               <p>第一次购买女优说很漂亮</p>
               </div>
             </li>
-            <img class="bought" src="./imgs/pos.jpg" alt="">
+            <img class="bought" src="../imgs/pos.jpg" alt="">
             <div class="pos">
                 <i class="iconfont icon-dingwei"></i>
                 <p>美国加利福尼亚</p>
@@ -426,7 +426,7 @@
               <p style="margin:15px 0 0 10px">销量第一</p>
             </li>
           </ul>
-          <img src="./imgs/protect.jpg" alt="">
+          <img src="../imgs/protect.jpg" alt="">
         </div>
         
 
@@ -460,20 +460,20 @@
         <ul>
           <li>
             <a href="##">
-              <img src="./imgs/m1.png" alt="">
+              <img src="../imgs/m1.png" alt="">
             </a>
           </li>
           <li>
-            <img src="./imgs/m2.png" alt="">
+            <img src="../imgs/m2.png" alt="">
           </li>
           <li>
             <a href="##">
-              <img src="./imgs/m3.jpg" alt="">
+              <img src="../imgs/m3.jpg" alt="">
             </a>
           </li>
           <li>
             <a href="##">
-              <img src="./imgs/m4.jpg" alt="">
+              <img src="../imgs/m4.jpg" alt="">
             </a>
           </li>
         </ul>

@@ -1,18 +1,23 @@
 import axios from 'axios'
+import qs from 'qs'
 
-import { BASE_PATH } from '../config'
-import { Loading } from 'element-ui';
+// import { BASE_PATH } from '../config'
+
 
 const instance = axios.create({
   timeout: 10000,
-  baseURL: BASE_PATH
+  baseURL: '/api'
 })
 
-// 配置请求拦截器
+// 添加请求拦截器
 instance.interceptors.request.use(config => {
+  if(config.method.toUpperCase() === 'POST' && config.data  instanceof Object){
+    config.data = qs.stringify(config.data)
+  }
     return config
 })
 
+// 添加响应拦截器
 instance.interceptors.response.use(
   response => {
     return response.data

@@ -3,7 +3,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import router from '../src/router'
 
 import App from './App.vue'
-
 import store from './store'
 
 // import TopHeader from './components/TopHeader/TopHeader'
@@ -41,5 +40,5 @@ new Vue({
   },
   template: '<App />',
   router, //注册路由
-  store
+  store, //状态集中管理对象store
 }).$mount('#app')

@@ -1,4 +1,5 @@
 let express = require('express')
+let details = require('./datas/details.json')
 
 // let flower = require('./datas/flower')
 let yongshenghua = require('./datas/flower')
@@ -19,6 +20,12 @@ app.get('/yongshenghua',(req,res) => {
   res.send(yongshenghua)
 })
 
+
+
+
+app.get('/details',(req,res) => {
+  res.send(details)
+})
 
 
 app.listen('3000',() => {
