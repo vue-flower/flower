@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="topImg" src="../image/top.png" alt="">
+    <img class="topImg" src="../../image/top.png" alt="">
     <header>
       <div id="nav">
         <ul class="leftNav">

@@ -4,6 +4,13 @@
       <ul>
         <!-- <li > -->
         <li v-for="(flowers,index) in yongshenghuaList " :key="index">
+
+          <router-link to="/product">
+          
+          蛋糕
+          
+          </router-link>
+
           
           <a href="##">
             <img :src="`https://img01.hua.com/uploadpic/newpic/${flowers.ItemCode}.jpg_220x240.jpg`" alt="">
@@ -13,6 +20,8 @@
             <h5>永生花台灯</h5>
             <h5>{{flowers.Price}}</h5>
           </a>
+
+          
         </li>
       </ul>
     </div>

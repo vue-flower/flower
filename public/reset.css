@@ -32,6 +32,10 @@ footer, header, menu, nav, section {
 body {
   line-height: 1;
 }
+html,body{
+  width: 100%;
+  overflow: hidden;
+}
 
 blockquote, q {
   quotes: none;
@@ -50,10 +54,16 @@ table {
 /* custom */
 a {
   color: #7e8c8d;
+}
+
+  color: #fff;
+  /* font-size: 100%; */
   text-decoration: none;
   -webkit-backface-visibility: hidden;
 }
-
+ul{
+  list-style: none;  
+}
 li {
   list-style: none;
 }

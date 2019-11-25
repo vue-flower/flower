@@ -2,9 +2,25 @@
   <Content class="content">
     <nav class="list-nav">
       <ul>
-        <li><a href="">鲜花</a></li>
-        <li><a href="">永生花</a></li>
-        <li><a href="">蛋糕</a></li>
+        <li>
+          <!-- <a href="">鲜花</a> -->
+          <router-link to="/flower">鲜花</router-link>
+          </li>
+        <li>
+          <!-- <a href="">永生花</a> -->
+          <router-link to="/yongshenghua">永生花</router-link>
+          </li>
+        <li>
+          <!-- <a href="">蛋糕</a> -->
+          <router-link to="/cake">蛋糕</router-link>
+
+          
+          </li>
+        <li>
+          <!-- <a href="">蛋糕</a> -->
+          <router-link to="/product">详情</router-link>
+          </li>
+
         <li><a href="">礼品</a></li>
         <li><a href="">巧克力</a></li>
         <li><a href="">花语大全</a></li>

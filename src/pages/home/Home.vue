@@ -1,15 +1,87 @@
 <template>
-  <div>
-    homey页面
+  <div class="home">
+    <TopHeader>
+    </TopHeader>
+
+    <div class="container-all">
+      <TopNavAside>
+      </TopNavAside>
+    </div>
+      <Banner class="banner">
+      </Banner>
+
+    <Ad></Ad>
+
+    <TimeLimit></TimeLimit>
+    <div class="white-30"></div>
+
+
+        <floor v-for="(todo, index) in todos" :key="index" :todo="todo"></floor>
+        <div class="white-50"></div>
+   
+          <!-- <floor></floor> -->
+    <!-- <floor></floor>
+    <div class="white-50"></div>
+    <floor ></floor>
+    <div class="white-50"></div>
+    
+    <floor></floor>
+    <div class="white-50"></div>
+
+    <floor></floor>
+    <div class="white-50"></div>
+
+    <floor></floor> -->
+
+    <Footer>
+    </Footer>
   </div>
-</template>
+</template> 
 
-<script type="text/ecmascript-6">
-  export default {
-  }
+<script>
+import {mapGetters} from 'vuex'
+export default {
+  data(){
+    return {
+      todos:[]
+    }
+  },
+  computed: {
+    ...mapGetters(['chunkFloorList'])
+  },
+  mounted() {
+    this.$store.dispatch('getFloor')
+    this.$nextTick(()=>{
+      console.log(this.$store.getters.chunkFloorList)
+    })
+    console.log(this.todos)
+
+  },
+  watch: {
+    chunkFloorList(){
+      this.$nextTick(()=>{
+        // console.log(this.chunkFloorList)
+        this.todos = this.chunkFloorList
+      })
+    }
+  },
+
+};
 </script>
-
-<style scoped>
-
+  
+<style lang="stylus" rel="stylesheet/stylus" scoped>
+.home
+  width 100%
+  overflow hidden
+  .container-all
+    // width 100%
+    position relative
+  .banner
+    position absolute
+    // top 40px
+    // left 0
+    z-index -1
+    top 280px
+    left 0
 
 </style>
