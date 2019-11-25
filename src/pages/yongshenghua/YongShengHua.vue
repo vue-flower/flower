@@ -241,12 +241,6 @@
     components: {
       YongshenghuaList
     },
-
-
-    computed: {
-     
-    }
-    
   
   }
 </script>
