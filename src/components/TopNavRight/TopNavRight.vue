@@ -2,7 +2,9 @@
   <Content class="content">
     <nav class="list-nav">
       <ul>
-        <li><a href="">鲜花</a></li>
+        <li>
+          <a href="">鲜花</a>
+        </li>
         <li><a href="">永生花</a></li>
         <li><a href="">蛋糕</a></li>
         <li><a href="">礼品</a></li>
