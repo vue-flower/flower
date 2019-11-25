@@ -3,6 +3,7 @@ import qs from 'qs'
 
 import { BASE_PATH } from '../config'
 import  { Message  } from 'element-ui';
+
 const instance = axios.create({
   timeout: 10000,
   baseURL: BASE_PATH

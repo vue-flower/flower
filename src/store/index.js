@@ -8,6 +8,8 @@ import getters from './getters'
 
 import flower from './modules/flower'
 import cake from './modules/cake'
+import floor from './modules/floor'
+import limit from './modules/limit'
 
 Vue.use(Vuex)
 
@@ -15,7 +17,9 @@ Vue.use(Vuex)
 const store =  new Vuex.Store({
   modules:{
     flower,
-    cake
+    cake,
+    floor,
+    limit
   },
   state,
   mutations,

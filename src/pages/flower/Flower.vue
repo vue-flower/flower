@@ -81,6 +81,7 @@ import Swiper from 'swiper'
 import 'swiper/css/swiper.css'
 import ClassifyItem from '../../components/classify-item/ClassifyItem'
 import classifysData from './datas/classify'
+import Banner from '../../components/Banner/Banner'
 import FlowerList from './flowe-list/FlowerList'
 import { mapGetters,mapState } from 'vuex'
   export default {

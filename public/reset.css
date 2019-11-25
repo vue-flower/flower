@@ -32,6 +32,10 @@ footer, header, menu, nav, section {
 body {
   line-height: 1;
 }
+html,body{
+  width: 100%;
+  overflow: hidden;
+}
 
 blockquote, q {
   quotes: none;

@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="activity">
-      <img src="https://img02.hua.com/pc/images/pc_newuser_order_100.png" />
+      <a href=""><img src="https://img02.hua.com/pc/images/pc_newuser_order_100.png" /></a>
     </div>
 
     <div class="top-banner">
@@ -66,7 +66,7 @@
     <div class="header">
       <div class="logo">
         <h1>
-          <img src="../../image/静态图片/home/ia_200000105.png" alt="" />
+          <a href=""><img src="../../image/静态图片/home/ia_200000105.png" alt="" /></a>
         </h1>
       </div>
       <div class="search">
