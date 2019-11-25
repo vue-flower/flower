@@ -85,10 +85,10 @@ export default {
     submitForm() {
       console.log(this.ruleForm.code.length)
       if(/^1[3456789]\d{9}$/.test(this.ruleForm.phone) && this.ruleForm.code.length === 4){
-        this.$store.dispatch('getUserAction',{user: this.ruleForm.account})
+        this.$store.dispatch('getUserAction',{user:this.ruleForm.phone,pwd: this.ruleForm.code})
         this.$router.replace('/home')
       }else{
-        this.$message('请检查信息')
+        this.$message('账号或者密码错误')
       }
     }
   }

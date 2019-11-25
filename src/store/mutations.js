@@ -11,7 +11,7 @@ export default {
   // },
   [SAVE_TOKEN](state, {token}){
     // 存储到本地localStorage || sessionStorage
-    localStorage.setItem('token_key', token)
+    localStorage.setItem('token_key', JSON.stringify(token))
     state.token = token
   },
   

@@ -37,8 +37,8 @@ export default {
     return {
       //默认第一个选项卡
       // activeName: "first",
-      // activeName: "second",
-      activeName: "third",
+      activeName: "second",
+      // activeName: "third",
     };
   },
   mounted() {}

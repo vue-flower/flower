@@ -83,7 +83,7 @@ export default {
         this.$store.dispatch('getUserAction',{user:this.ruleForm.account,pwd: this.ruleForm.pwd})
         this.$router.replace('/home')
       }else{
-        this.$message('请检查信息')
+        this.$message('账号或者密码错误')
       }
     }
   }

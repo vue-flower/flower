@@ -1,7 +1,7 @@
 import axios from 'axios'
+import qs from 'qs'
 
 import { BASE_PATH } from '../config'
-import { Loading } from 'element-ui';
 
 const instance = axios.create({
   timeout: 10000,
@@ -10,7 +10,12 @@ const instance = axios.create({
 
 // 配置请求拦截器
 instance.interceptors.request.use(config => {
-    return config
+  const {data} = config
+  if (data instanceof Object) { // 只要data是对象就转换
+    config.data = qs.stringify(data)
+  }
+  console.log('请求'+config)
+  return config
 })
 
 instance.interceptors.response.use(
