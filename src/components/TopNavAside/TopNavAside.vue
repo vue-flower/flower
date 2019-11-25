@@ -3,7 +3,7 @@
     <div class="nav">
       <div class="nav-bar">
         <TopNavLeft class="left"></TopNavLeft>
-        <TopNavRight class="right"></TopNavRight>
+        <!-- <TopNavRight class="right"></TopNavRight> -->
 
       </div>
       <Aside></Aside>

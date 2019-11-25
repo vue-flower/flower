@@ -53,6 +53,9 @@
     margin 20px auto
     height 120px
     // background pink
+    position absolute
+    top 700px
+    left 200px
     .ad-container-ul
       display flex
       justify-content space-between

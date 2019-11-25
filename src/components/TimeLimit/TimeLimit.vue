@@ -57,6 +57,9 @@ import {mapGetters, mapState} from 'vuex'
     height 200px
     margin 0 auto
     display flex
+    position: absolute;
+    top: 825px;
+    left 176px
     .time-title
       background-color #aacc03
       width 240px

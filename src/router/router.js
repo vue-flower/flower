@@ -34,12 +34,13 @@ export default [
   {
     path:'/cake',
     component: Cake
-  }, {
+  }, 
+  {
     path:'/test',
     component: Test
   }, 
   {
-    path:'/test',
+    path:'/t',
     component: Cake
   },
   {

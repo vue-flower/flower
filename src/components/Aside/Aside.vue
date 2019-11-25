@@ -138,6 +138,9 @@ export default {};
     padding 10px 15px 20px 15px
     // border-top 4px solid #ff6a00
     border-bottom 4px solid #ff6a00
+    position: absolute;
+    left: 164px;
+    top: 280px;
 
     h4 
       font-size 14px

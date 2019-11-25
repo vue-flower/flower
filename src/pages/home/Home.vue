@@ -1,24 +1,25 @@
 <template>
   <div class="home">
-    <TopHeader>
-    </TopHeader>
+
 
     <div class="container-all">
-      <TopNavAside>
-      </TopNavAside>
+      <TopNavLeft/>
     </div>
-      <Banner class="banner">
-      </Banner>
-
+    <!-- 轮播 -->
+    <Banner class="banner">
+    </Banner>
+    <Aside></Aside>
+      
     <Ad></Ad>
 
     <TimeLimit></TimeLimit>
-    <div class="white-30"></div>
 
-
-        <floor v-for="(todo, index) in todos" :key="index" :todo="todo"></floor>
-        <div class="white-50"></div>
-   
+    <div class="hhhhhhh">
+      <div class="white-30"></div>
+      <floor v-for="(todo, index) in todos[0]" :key="index" :todo="todo"></floor>
+      <div class="white-50"></div>
+    </div>
+  
           <!-- <floor></floor> -->
     <!-- <floor></floor>
     <div class="white-50"></div>
@@ -40,11 +41,15 @@
 
 <script>
 import {mapGetters} from 'vuex'
+import Aside from '../../components/Aside/Aside'
 export default {
   data(){
     return {
       todos:[]
     }
+  },
+  components:{
+    Aside
   },
   computed: {
     ...mapGetters(['chunkFloorList'])
@@ -75,7 +80,10 @@ export default {
   overflow hidden
   .container-all
     // width 100%
-    position relative
+    // position relative
+    position: absolute;
+    top: 240px;
+    left: 164px;
   .banner
     position absolute
     // top 40px
@@ -83,5 +91,10 @@ export default {
     z-index -1
     top 280px
     left 0
+  .hhhhhhh
+    position absolute
+    top 1000px
+    left 200px
+    
 
 </style>
