@@ -5,18 +5,12 @@
         <child1></child1>
       </el-tab-pane>
 
-      <el-tab-pane
-        label="账号密码登陆"
-        name="second" :key="'second'"
-      >
-      <child2 ></child2>
+      <el-tab-pane label="账号密码登陆" name="second" :key="'second'">
+        <child2></child2>
       </el-tab-pane>
 
-      <el-tab-pane
-        label="手机短信登陆"
-        name="third" :key="'third'"
-      >
-      <child3></child3>
+      <el-tab-pane label="手机短信登陆" name="third" :key="'third'">
+        <child3></child3>
       </el-tab-pane>
     </el-tabs>
   </div>
@@ -37,7 +31,7 @@ export default {
     return {
       //默认第一个选项卡
       // activeName: "first",
-      activeName: "second",
+      activeName: "second"
       // activeName: "third",
     };
   },
@@ -54,6 +48,4 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
 </style>
