@@ -1,6 +1,6 @@
 <template>
   <div class="right-containt">
-    <li >
+    <li @click.prevent="$router.replace('/product')" >
       <a href="">
         <div class="img-box">
           <img

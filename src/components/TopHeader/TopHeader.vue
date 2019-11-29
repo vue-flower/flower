@@ -1,14 +1,14 @@
 <template>
   <header class="header">
     <div class="activity">
-      <a href=""><img src="https://img02.hua.com/pc/images/pc_newuser_order_100.png" /></a>
+      <a href="javascript:"><img src="https://img02.hua.com/pc/images/pc_newuser_order_100.png" /></a>
     </div>
 
     <div class="top-banner">
       <nav class="top-nav">
         <ul class="top-nav-left">
           <li class="">
-            <a href="">
+            <a @click="$router.push('/home')" href="javascript:">
               <span>收藏鲜花网(hua.com)</span>
             </a>
           </li>
@@ -18,39 +18,39 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="javascript:">
               <span>花礼网app</span>
             </a>
           </li>
         </ul>
         <ul class="top-nav-right">
-          <li>
-            <a href="">
+          <li @click="$router.push('/login')">
+            <a href="javascript:">
               <span>您好,请登录</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="javascript:">
               <span>注册</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="javascript:">
               <span>订单查询</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="javascript:">
               <span>我的花礼</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="javascript:">
               <span>客户服务</span>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li @click.prevent="$router.push('/Shopping/ShowCart')">
+            <a href="javascript:">
               <span>购物车</span>
             </a>
           </li>
@@ -66,7 +66,7 @@
     <div class="header">
       <div class="logo">
         <h1>
-          <a href=""><img src="../../image/静态图片/home/ia_200000105.png" alt="" /></a>
+          <a href="javascript:"><img src="../../image/静态图片/home/ia_200000105.png" alt="" /></a>
         </h1>
       </div>
       <div class="search">

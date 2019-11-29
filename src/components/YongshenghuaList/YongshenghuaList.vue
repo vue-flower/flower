@@ -2,27 +2,26 @@
     <!-- 鲜花商品 -->
     <div class="flowersGoods">
       <ul>
-        <!-- <li > -->
-        <li v-for="(flowers,index) in yongshenghuaList " :key="index">
+          <li @click="goProduct('product')" v-for="(flowers,index) in yongshenghuaList " :key="index">
 
-          <router-link to="/product">
+            <!-- <router-link to="/product">
+            
           
-          蛋糕
-          
-          </router-link>
+            
+            </router-link> -->
 
-          
-          <a href="##">
-            <img :src="`https://img01.hua.com/uploadpic/newpic/${flowers.ItemCode}.jpg_220x240.jpg`" alt="">
+            
+            <a href="##">
+              <img :src="`https://img01.hua.com/uploadpic/newpic/${flowers.ItemCode}.jpg_220x240.jpg`" alt="">
 
-            <h4>{{flowers.Cpmc}}</h4>
-            <h6>{{flowers.Instro}}</h6>
-            <h5>永生花台灯</h5>
-            <h5>{{flowers.Price}}</h5>
-          </a>
+              <h4>{{flowers.Cpmc}}</h4>
+              <h6>{{flowers.Instro}}</h6>
+              <h5>永生花台灯</h5>
+              <h5>{{flowers.Price}}</h5>
+            </a>
 
-          
-        </li>
+            
+          </li>
       </ul>
     </div>
     
@@ -57,6 +56,12 @@ import {mapState} from 'vuex'
       ...mapState({
         yongshenghuaList: state => state.yongshenghua.yongshenghuaList 
       })
+    },
+
+    methods:{
+      goProduct(path){
+        this.$router.push(path)
+      }
     }
 
 

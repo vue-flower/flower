@@ -8,8 +8,8 @@
         </div>
       </div>
     </div>
-    <ul>
-      <li v-for="(limit, index) in limitList" :key="index">
+    <ul @click.prevent="$router.replace('/product')">
+      <li  v-for="(limit, index) in limitList" :key="index">
         <a href="">
           <img :src="limit.imgsrc" alt="">
           <div class="advise">

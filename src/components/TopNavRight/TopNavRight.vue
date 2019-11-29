@@ -5,28 +5,32 @@
         <li>
           <!-- <a href="">鲜花</a> -->
           <router-link to="/flower">鲜花</router-link>
-          </li>
+        </li>
+
+
         <li>
           <!-- <a href="">永生花</a> -->
           <router-link to="/yongshenghua">永生花</router-link>
-          </li>
+        </li>
+
+
         <li>
           <!-- <a href="">蛋糕</a> -->
           <router-link to="/cake">蛋糕</router-link>
+        </li>
 
-          
-          </li>
+
         <li>
           <!-- <a href="">蛋糕</a> -->
           <router-link to="/product">详情</router-link>
-          </li>
+        </li>
 
         <li><a href="">礼品</a></li>
         <li><a href="">巧克力</a></li>
-        <li><a href="">花语大全</a></li>
-        <li><a href="">企业团购</a></li>
-        <li><a href="">设计师甄选鲜花</a></li>
-        <li><a href="">感恩节鲜花礼物</a></li>
+        <li class="huayu"><a href="">花语大全</a></li>
+       
+        <li class="shejishi"><a href="">设计师甄选鲜花</a></li>
+       
       </ul>
     </nav>
   </Content>
@@ -44,6 +48,12 @@ export default {};
       ul
         display flex
         li
+          width 110px
+          height 39px
+          &.huayu
+            width 130px
+          &.shejishi
+            width 180px
           a
             height 21px
             line-height 21px

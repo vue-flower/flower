@@ -1,11 +1,19 @@
 <template>
   <div id="app">
-    <router-link to="/home">首页</router-link>
+    <!-- <router-link to="/home">首页</router-link>
     <router-link to="/flower">鲜花</router-link>
     <router-link to="/yongshenghua">永生花</router-link>
     <router-link to="/product">详情</router-link>
     <router-link to="/cake">蛋糕</router-link>
-    <router-link to="/test">swiper Test</router-link>
+    <router-link to="/test">swiper Test</router-link> -->
+
+
+
+
+
+
+
+
     <!-- <div class="router">
       <router-link to="/home">首页</router-link>
       <router-link to="/flower">鲜花</router-link>

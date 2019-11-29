@@ -4,8 +4,8 @@
     <header>
       <div id="nav">
         <ul class="leftNav">
-          <li>
-            <a href="###">
+          <li @click="$router.push('/home')">
+            <a href="##">
               <span>
                 <i class="iconfont icon-xingxing"></i>
               </span>
